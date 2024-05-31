@@ -4,8 +4,8 @@ type: article
 ---
 
 {%- include snippets/assign.html
-  target = site.data.variables.default.page.sharing
-  source0=layout.sharing source1=page.sharing -%}
+target = site.data.variables.default.page.sharing
+source0=layout.sharing source1=page.sharing -%}
 {%- assign _sharing = __return -%}
 
 <div class="layout--article">
@@ -14,7 +14,7 @@ type: article
   <div class="article__content" itemprop="articleBody">{{ content }}</div>
 
   {%- if _sharing -%}
-    <section class="article__sharing d-print-none">{%- include sharing.html -%}</section>
+  <section class="article__sharing d-print-none">{%- include sharing.html -%}</section>
   {%- endif -%}
 
   <div class="d-print-none">
@@ -25,5 +25,20 @@ type: article
 </div>
 
 <script>
-  {%- include scripts/article.js -%}
+  {% - include scripts / article.js -%}
 </script>
+
+
+<!-- <script src="https://unpkg.com/scrollnav@3.0.1/dist/scrollnav.min.umd.js"></script>
+
+<script>
+  const ct = document.querySelector('.post-content');  //".post-content"指向文章内容所在的div，需根据实际情况修改
+  scrollnav.init(ct, {
+    debug: false,
+    easingStyle: 'linear',
+    //section为一级目录，subsection为二级目录
+    //以下两行意为h3为一级目录，h4为二级目录（个人只需要一级目录，所以注释了二级目录）
+    sections: ($('.post-content > h1').length > 0) ? 'h3' : 'h4',
+    //subSections: ($('.post-content > h1').length>0) ? 'h4' : 'h5',
+  });
+</script> -->
