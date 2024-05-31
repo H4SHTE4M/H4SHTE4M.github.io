@@ -6,10 +6,10 @@
   @include flexbox();
   @include align-items(center);
   color: $footer-text-color;
-  background: #a2c6ec
+  background: #a2c6ec;
 
-    /*$footer-background;*/
-    a {
+  /*$footer-background;*/
+  a {
     @include link-colors ($footer-text-color, $main-color-1);
   }
 
