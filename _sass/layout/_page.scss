@@ -7,10 +7,12 @@ html,
 
 .layout--page {
   &.layout--page--sidebar {
+
     .page__viewport,
     .page__grid {
       height: 100%;
     }
+
     @include media-breakpoint-down(lg) {
       .page__main {
         @include overflow(unset);
@@ -22,9 +24,11 @@ html,
 .page__main {
   height: 100%;
   color: $text-color;
+
   .col-aside {
     display: none;
-    & > aside {
+
+    &>aside {
       position: absolute;
       width: map-get($layout, aside-width);
       @include overflow(hidden);
@@ -37,17 +41,20 @@ html,
   @include flexbox();
   @include flex-direction(column);
   min-height: 100%;
-  background-color: $background-color;
+  background-color: #e1f1ff;
+  /*$background-color;*/
 }
 
 .page__content {
   @include flex(1);
   width: 100%;
   margin: 0 auto;
+
   @media print {
     padding-bottom: 0;
   }
 }
+
 .hide-footer {
   .page__content {
     padding-bottom: 0;
@@ -82,10 +89,12 @@ html,
   @include split-line(right);
   @include transition(transform map-get($animation, duration));
   @include overflow(auto);
+
   .sidebar-toc {
     padding: map-get($spacers, 3) map-get($spacers, 3) map-get($spacers, 4) map-get($spacers, 4);
   }
 }
+
 .sidebar-button {
   @include clickable($text-color-d, rgba($main-color-3, .75));
 }
@@ -94,9 +103,11 @@ html,
   @include modal(map-get($z-indexes, mask));
   cursor: pointer;
 }
+
 .layout--page--sidebar {
   .page__main {
     @include overflow(auto);
+
     @media print {
       @include overflow(unset);
     }
@@ -108,12 +119,14 @@ html,
     position: relative;
     display: block;
     width: map-get($layout, aside-width);
-    & > aside {
+
+    &>aside {
       &.fixed {
         position: fixed;
         -webkit-font-smoothing: subpixel-antialiased;
       }
     }
+
     @include media-breakpoint-down(lg) {
       display: none;
     }
@@ -134,9 +147,11 @@ html,
     .page__actions {
       visibility: hidden;
     }
+
     .page__sidebar {
       @include transform(translate(0));
     }
+
     .page__mask {
       @include modal--show();
     }
@@ -148,6 +163,7 @@ html,
     color: $text-color-theme-light;
   }
 }
+
 .hero--dark {
   .article__info {
     color: $text-color-theme-dark;
@@ -159,6 +175,7 @@ html,
     position: absolute;
     width: 100%;
   }
+
   .hero__content {
     padding-top: map-get($layout, header-height);
   }
