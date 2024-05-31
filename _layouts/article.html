@@ -4,8 +4,8 @@ type: article
 ---
 
 {%- include snippets/assign.html
-target = site.data.variables.default.page.sharing
-source0=layout.sharing source1=page.sharing -%}
+  target = site.data.variables.default.page.sharing
+  source0=layout.sharing source1=page.sharing -%}
 {%- assign _sharing = __return -%}
 
 <div class="layout--article">
@@ -14,7 +14,7 @@ source0=layout.sharing source1=page.sharing -%}
   <div class="article__content" itemprop="articleBody">{{ content }}</div>
 
   {%- if _sharing -%}
-  <section class="article__sharing d-print-none">{%- include sharing.html -%}</section>
+    <section class="article__sharing d-print-none">{%- include sharing.html -%}</section>
   {%- endif -%}
 
   <div class="d-print-none">
@@ -25,5 +25,5 @@ source0=layout.sharing source1=page.sharing -%}
 </div>
 
 <script>
-  {% - include scripts / article.js -%}
+  {%- include scripts/article.js -%}
 </script>
