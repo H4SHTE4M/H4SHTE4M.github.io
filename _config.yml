@@ -37,7 +37,7 @@ author:
   type      : organization # "person" (default), "organization"
   name      : HASHTEAM
   url       : 
-  avatar    : /img/HASHTEAMlogo.jpg # path or url of avatar image (square) https://github.com/H4SHTE4M/H4SHTE4M.github.io/blob/master/img/HASHTEAMlogo.jpg
+  avatar    : img/HASHTEAMlogo.jpg # path or url of avatar image (square) https://github.com/H4SHTE4M/H4SHTE4M.github.io/blob/master/img/HASHTEAMlogo.jpg
   bio       : 
   email     :
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
@@ -49,13 +49,13 @@ author:
   zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
   douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
   linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
-  github    : https://github.com/orgs/H4SHTE4M/repositories # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  github    : orgs/H4SHTE4M/repositories # "user_name" the last part of your profile url, e.g. https://github.com/user_name
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: user_name/repo_name
+repository: H4SHTE4M/H4SHTE4M.github.io
 repository_tree: master
 
 
@@ -78,14 +78,17 @@ license: CC-BY-NC-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4
 
 ## TOC
 toc:
+ture
+ture
+
   selectors: # "h1,h2,h3" (default)
 
 
 ## => Markdown Enhancements
 ##############################
 ## Mathjax
-mathjax: # false (default), true
-mathjax_autoNumber: # false (default), true
+mathjax: true # false (default), true
+mathjax_autoNumber: ture # false (default), true
 
 ## Mermaid
 mermaid: # false (default), true
