@@ -26,6 +26,11 @@ titles:
 key: page-about
 ---
 
-## Join Us?
+### About
+
+HASHTEAM
+
+`Join Us?`
 
 If you are a student in SDU, join us!
+
