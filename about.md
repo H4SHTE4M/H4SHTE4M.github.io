@@ -26,9 +26,7 @@ titles:
 key: page-about
 ---
 
-### About
-
-HASHTEAM
+你说的对，HASHTEAM
 
 `Join Us?`
 
