@@ -41,7 +41,7 @@ html,
   @include flexbox();
   @include flex-direction(column);
   min-height: 100%;
-  background-color: #e1f1ff;
+  background-color: #ffffff; //#e1f1ff;
   /*$background-color;*/
 }
 

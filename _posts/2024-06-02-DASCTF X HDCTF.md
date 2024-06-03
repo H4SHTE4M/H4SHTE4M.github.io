@@ -1,5 +1,5 @@
 ---
-title: DASCTF X HDCTF
+title: DASCTF X HDCTF 2024
 tags: Writeup DASCTF
 layout: article
 mathjax: true
