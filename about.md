@@ -32,7 +32,7 @@ key: page-about
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
   gap: 20px;
-  padding: 20px;
+  padding: 10px;
   font-family: Arial, sans-serif;
 }
 
@@ -41,7 +41,7 @@ key: page-about
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
   gap: 20px;
-  padding: 20px;
+  padding: 10px;
   font-family: Arial, sans-serif;
 }
 
