@@ -162,7 +162,7 @@ ul {
 </style>
 
 <div class="logo">
-    <img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="HASHTEAM Logo" width="200" height="200">
+    <img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="HASHTEAM Logo" width="100" height="100">
     <h1><strong>HASHTEAM</strong></h1>
 </div>
 
@@ -182,11 +182,11 @@ ul {
       <rect x="30" y="46" width="65" height="9" fill="#ffc107" />
       <rect x="30" y="58" width="55" height="9" fill="#17a2b8" />
       <!-- 标签 -->
-      <text x="20" y="17" text-anchor="end" font-size="4">Crypto</text>
-      <text x="20" y="29" text-anchor="end" font-size="4">Pwn</text>
-      <text x="20" y="41" text-anchor="end" font-size="4">Web</text>
-      <text x="20" y="53" text-anchor="end" font-size="4">Reverse</text>
-      <text x="20" y="65" text-anchor="end" font-size="4">Misc</text>
+      <text x="20" y="17" text-anchor="end" font-size="5">Crypto</text>
+      <text x="20" y="29" text-anchor="end" font-size="5">Pwn</text>
+      <text x="20" y="41" text-anchor="end" font-size="5">Web</text>
+      <text x="20" y="53" text-anchor="end" font-size="5">Reverse</text>
+      <text x="20" y="65" text-anchor="end" font-size="5">Misc</text>
     </svg>
   </div>
 </div>
