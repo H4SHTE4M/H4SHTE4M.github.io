@@ -182,11 +182,11 @@ ul {
       <rect x="30" y="46" width="65" height="9" fill="#ffc107" />
       <rect x="30" y="58" width="55" height="9" fill="#17a2b8" />
       <!-- 标签 -->
-      <text x="20" y="17" text-anchor="end" font-size="5">Crypto</text>
-      <text x="20" y="29" text-anchor="end" font-size="5">Pwn</text>
-      <text x="20" y="41" text-anchor="end" font-size="5">Web</text>
-      <text x="20" y="53" text-anchor="end" font-size="5">Reverse</text>
-      <text x="20" y="65" text-anchor="end" font-size="5">Misc</text>
+      <text x="20" y="17" text-anchor="end" font-size="6">Crypto</text>
+      <text x="20" y="29" text-anchor="end" font-size="6">Pwn</text>
+      <text x="20" y="41" text-anchor="end" font-size="6">Web</text>
+      <text x="20" y="53" text-anchor="end" font-size="6">Reverse</text>
+      <text x="20" y="65" text-anchor="end" font-size="6">Misc</text>
     </svg>
   </div>
 </div>
