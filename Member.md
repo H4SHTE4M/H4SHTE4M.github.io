@@ -24,8 +24,6 @@ titles:
 key: page-about
 
 ---
-Hacked by ***1r0ny***
-
 <div class="container">
   <h2>成员列表</h2>
   <h3>2020级队员：</h3>
@@ -137,9 +135,9 @@ Hacked by ***1r0ny***
         </div>
     </div>
     <div class="member">
-        <a href="https://lmarch2.top/" target="_blank">
+        <a href="https://blog.csdn.net/GKD2019" target="_blank">
             <div class="avatar">
-                <img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar">
+                <img src="https://avatars.githubusercontent.com/u/108865421" alt="Avatar">
             </div>
         </a>
         <div class="info">
@@ -209,7 +207,7 @@ Hacked by ***1r0ny***
         <a href="https://dawnrisingdong.github.io/" target="_blank">
             <div class="avatar">
                 <img src="https://raw.githubusercontent.com/dawnrisingDong/pic_bed/main/img/202406071747324.jpg" alt="Avatar">
-            </div>
+            </div>  
         </a>
         <div class="info">
             <div class="name">dawn_rising</div>
@@ -276,7 +274,7 @@ Hacked by ***1r0ny***
       <a href="https://almostgph.github.io/" target="_blank"><img src="https://s3.bmp.ovh/imgs/2024/06/07/a1952c20a4b739d7.jpg" alt="Avatar 10"></a>
       <a href="https://almostgph.github.io/" target="_blank"><img src="https://avatars.githubusercontent.com/u/162857404?s=400&u=ad0f3d8c1d4184a4c69a947df8edaf4e487306d2&v=4" alt="Avatar 1"></a>
       <a href="https://lwzheng.tech/" target="_blank"><img src="https://s2.loli.net/2024/06/07/apGA7bF6SYgB8nx.jpg" alt="Avatar 2"></a>
-      <a href="https://almostgph.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 3"></a>
+      <a href="https://blog.csdn.net/GKD2019" target="_blank"><img src="https://avatars.githubusercontent.com/u/108865421" alt="Avatar 3"></a>
       <a href="https://almostgph.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 4"></a>
       <a href="https://almostgph.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 5"></a>
       <a href="https://almostgph.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 6"></a>
