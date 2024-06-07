@@ -103,9 +103,9 @@ Hacked by ***1r0ny***
         </div>
     </div>
     <div class="member">
-        <a href="zhuzimiko.com" target="_blank">
+        <a href="https://zhuzimiko.com/" target="_blank">
             <div class="avatar">
-                <img src="http://www.zhuzimiko.com/userAvatar/Camera_XHS_17144719609811040g2sg311uepaf9iq605ono.jpg" alt="Avatar">
+                <img src="https://s2.loli.net/2024/06/07/ASQ5RVaLcdZkTKy.jpg" alt="Avatar">
             </div>
         </a>
         <div class="info">
@@ -116,7 +116,7 @@ Hacked by ***1r0ny***
     <div class="member">
         <a href="https://lmarch2.top/" target="_blank">
             <div class="avatar">
-                <img src="https://github.com/lmarch2/images/blob/main/b_e05bb213ec75a4a3448d288364b7307c.jpg" alt="Avatar">
+                <img src="https://github.com/lmarch2/images/blob/main/b_e05bb213ec75a4a3448d288364b7307c.jpg?raw=true" alt="Avatar">
             </div>
         </a>
         <div class="info">
@@ -254,10 +254,10 @@ Hacked by ***1r0ny***
     <div class="scroll-content">
       <a href="https://almostgph.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/06/oyWFV32bHELhAdc.jpg" alt="Avatar 1"></a>
       <a href="https://ch31sbest.github.io/" target="_blank"><img src="https://ch31sbest.github.io/images/tou.jpg" alt="Avatar 2"></a>
-      <a href="https://lmarch2.top/" target="_blank"><img src="https://github.com/lmarch2/images/blob/main/b_e05bb213ec75a4a3448d288364b7307c.jpg" alt="Avatar 3"></a>
+      <a href="https://lmarch2.top/" target="_blank"><img src="https://github.com/lmarch2/images/blob/main/b_e05bb213ec75a4a3448d288364b7307c.jpg?raw=true" alt="Avatar 3"></a>
       <a href="https://www.cnblogs.com/Smera1d0" target="_blank"><img src="https://s2.loli.net/2024/06/07/pkE1gNSx4jHYeqD.jpg" alt="Avatar 4"></a>
       <a href="https://dawnrisingdong.github.io/" target="_blank"><img src="https://raw.githubusercontent.com/dawnrisingDong/pic_bed/main/img/202406071747324.jpg" alt="Avatar 5"></a>
-      <a href="zhuzimiko.com" target="_blank"><img src="http://www.zhuzimiko.com/userAvatar/Camera_XHS_17144719609811040g2sg311uepaf9iq605ono.jpg" alt="Avatar 6"></a>
+      <a href="https://zhuzimiko.com/" target="_blank"><img src="http://www.zhuzimiko.com/userAvatar/Camera_XHS_17144719609811040g2sg311uepaf9iq605ono.jpg" alt="Avatar 6"></a>
       <a href="https://almostgph.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 7"></a>
       <a href="https://almostgph.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 8"></a>
       <a href="https://almostgph.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 9"></a>
