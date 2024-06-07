@@ -159,7 +159,12 @@ ul {
 
 .join-button:hover {
   background-color: #79F7FE;
+  text-decoration:none;
 }
+
+
+
+
 </style>
 
 <div class="logo">
