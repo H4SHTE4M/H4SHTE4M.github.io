@@ -31,9 +31,9 @@ Hacked by ***1r0ny***
   <h3>2020级队员：</h3>
   <div class="member-list">
     <div class="member">
-        <a href="https://almostgph.github.io/" target="_blank">
+        <a href="https://silence-forest-sf.github.io/" target="_blank">
             <div class="avatar">
-                <img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar">
+                <img src="https://s2.loli.net/2024/06/07/HaRXKLcMOr8WYGt.jpg" alt="Avatar">
             </div>
         </a>
         <div class="info">
@@ -41,13 +41,14 @@ Hacked by ***1r0ny***
             <div class="description">Misc</div>
         </div>
     </div>
+    
   </div>
   <h3>2021级队员：</h3>
   <div class="member-list">
     <div class="member">
-        <a href="https://ch31sbest.github.io/" target="_blank">
+        <a href="https://r3t2b3d.github.io" target="_blank">
             <div class="avatar">
-                <img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar">
+                <img src="https://picture-1311455354.cos.ap-shanghai.myqcloud.com/img/b_7e7ccb7a6d5c480da999811826299e2f.jpg" alt="Avatar">
             </div>
         </a>
         <div class="info">
@@ -92,9 +93,20 @@ Hacked by ***1r0ny***
         </div>
     </div>
     <div class="member">
-        <a href="https://almostgph.github.io/" target="_blank">
+        <a href="https://www.cnblogs.com/9man" target="_blank">
             <div class="avatar">
                 <img src="https://s2.loli.net/2024/06/06/oyWFV32bHELhAdc.jpg" alt="Avatar">
+            </div>
+        </a>
+        <div class="info">
+            <div class="name">N1nEmAn</div>
+            <div class="description">Pwn</div>
+        </div>
+    </div>
+    <div class="member">
+        <a href="https://almostgph.github.io/" target="_blank">
+            <div class="avatar">
+                <img src="https://img2024.cnblogs.com/blog/3243444/202406/3243444-20240607200431017-1412856777.jpg" alt="Avatar">
             </div>
         </a>
         <div class="info">
@@ -234,7 +246,7 @@ Hacked by ***1r0ny***
         </a>
         <div class="info">
             <div class="name">Frada</div>
-            <div class="description">Web</div>
+            <div class="description">Misc</div>
         </div>
     </div>
     <div class="member">
@@ -258,9 +270,9 @@ Hacked by ***1r0ny***
       <a href="https://www.cnblogs.com/Smera1d0" target="_blank"><img src="https://s2.loli.net/2024/06/07/pkE1gNSx4jHYeqD.jpg" alt="Avatar 4"></a>
       <a href="https://dawnrisingdong.github.io/" target="_blank"><img src="https://raw.githubusercontent.com/dawnrisingDong/pic_bed/main/img/202406071747324.jpg" alt="Avatar 5"></a>
       <a href="https://zhuzimiko.com/" target="_blank"><img src="https://s2.loli.net/2024/06/07/ASQ5RVaLcdZkTKy.jpg" alt="Avatar 6"></a>
-      <a href="https://almostgph.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 7"></a>
-      <a href="https://almostgph.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 8"></a>
-      <a href="https://almostgph.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 9"></a>
+      <a href="https://silence-forest-sf.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/HaRXKLcMOr8WYGt.jpg" alt="Avatar 7"></a>
+      <a href="https://r3t2b3d.github.io" target="_blank"><img src="https://picture-1311455354.cos.ap-shanghai.myqcloud.com/img/b_7e7ccb7a6d5c480da999811826299e2f.jpg" alt="Avatar 8"></a>
+      <a href="https://www.cnblogs.com/9man" target="_blank"><img src="https://img2024.cnblogs.com/blog/3243444/202406/3243444-20240607200431017-1412856777.jpg" alt="Avatar 9"></a>
       <a href="https://almostgph.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 10"></a>
       <a href="https://almostgph.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 1"></a>
       <a href="https://almostgph.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 2"></a>
