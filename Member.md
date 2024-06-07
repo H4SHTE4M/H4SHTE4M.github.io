@@ -76,7 +76,6 @@ Hacked by ***1r0ny***
       <a href="https://ch31sbest.github.io/" target="_blank"><img src="https://ch31sbest.github.io/images/tou.jpg" alt="Avatar 20"></a>
     </div>
   </div>
-  <hr style="border-radius: 30%"/>
   <h2>成员列表：</h2>
   <div class="member-list">
     <div class="member">
