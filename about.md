@@ -150,14 +150,15 @@ ul {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #E4F0FE;
+  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
 }
 
+
 .join-button:hover {
-  background-color: #007bff;
+  background-color: #79F7FE;
 }
 </style>
 
