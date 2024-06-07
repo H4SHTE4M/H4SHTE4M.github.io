@@ -174,7 +174,7 @@ ul {
 
   <div class="skills">
     <h2>技能</h2>
-    <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="-5 0 120 80" xmlns="http://www.w3.org/2000/svg">
       <!-- 柱状图 -->
       <rect x="30" y="10" width="80" height="9" fill="#007bff" />
       <rect x="30" y="22" width="75" height="9" fill="#28a745" />
@@ -182,11 +182,11 @@ ul {
       <rect x="30" y="46" width="65" height="9" fill="#ffc107" />
       <rect x="30" y="58" width="55" height="9" fill="#17a2b8" />
       <!-- 标签 -->
-      <text x="20" y="17" text-anchor="end" font-size="6">Crypto</text>
-      <text x="20" y="29" text-anchor="end" font-size="6">Pwn</text>
-      <text x="20" y="41" text-anchor="end" font-size="6">Web</text>
-      <text x="20" y="53" text-anchor="end" font-size="6">Reverse</text>
-      <text x="20" y="65" text-anchor="end" font-size="6">Misc</text>
+      <text x="20" y="17" text-anchor="end" font-size="6" font-weight="bold">Crypto</text>
+      <text x="20" y="29" text-anchor="end" font-size="6" font-weight="bold">Pwn</text>
+      <text x="20" y="41" text-anchor="end" font-size="6" font-weight="bold">Web</text>
+      <text x="20" y="53" text-anchor="end" font-size="6" font-weight="bold">Reverse</text>
+      <text x="20" y="65" text-anchor="end" font-size="6" font-weight="bold">Misc</text>
     </svg>
   </div>
 </div>
