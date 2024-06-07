@@ -370,6 +370,23 @@ key: page-about
     border-radius: 10px;
     padding: 10px;
   }
+@media (max-width: 1200px) {
+  .member-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .member-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .member-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
   .member {
     display: grid;
