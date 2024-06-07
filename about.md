@@ -27,23 +27,28 @@ key: page-about
 ---
 
 <style>
-.container {
+.container, .container2 {
   display: grid;
-  grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
   gap: 20px;
   padding: 10px;
   font-family: Arial, sans-serif;
 }
 
-.container2 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto;
-  gap: 20px;
-  padding: 10px;
-  font-family: Arial, sans-serif;
+.container {
+  grid-template-columns: 2fr 1fr;
 }
+
+.container2 {
+  grid-template-columns: 1fr 2fr;
+}
+
+@media (max-width: 1000px) {
+  .container, .container2 {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 .logo {
   grid-column: 1 / 3;
@@ -89,7 +94,7 @@ ul {
   align-items: center;
   position: relative;
   padding: 20px 0;
-  height: 200px;
+  height: 150px;
 }
 
 .timeline .event {
@@ -103,16 +108,17 @@ ul {
 }
 
 .timeline .event span:first-child {
-  margin-bottom: 40px; /* 增加时间与事件之间的间距 */
+  margin-bottom: 50px; /* 增加时间与事件之间的间距 */
 }
 
 .timeline:before {
   content: '';
   position: absolute;
-  top: 50%;
+  top: 50% - 1px;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 4px;
+  border-radius: 3px;
   background-color: #ccc;
 }
 
@@ -139,6 +145,55 @@ ul {
   height: 10px;
   background-color: #666;
   border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .timeline {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 0 100px;
+  }
+
+  .timeline:before {
+    top: 0;
+    left: 50%;
+    width: 4px;
+    border-radius: 3px;
+    height: 100%;
+    transform: translateX(-50%);
+  }
+
+  .timeline:after {
+    top: auto;
+    bottom: -15px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ccc;
+  }
+
+  .timeline .event {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .timeline .event span:first-child {
+    margin-bottom: 0;
+    margin-right: 100px;
+  }
+
+  .timeline .event:before {
+    top: 50%;
+    left: auto;
+    right: calc(50% - 4pt);
+    transform: translateY(-50%);
+  }
 }
 
 .join-us {
@@ -215,29 +270,32 @@ ul {
 
   <div class="history">
     <h2>发展历程</h2>
-    <div class="timeline">
-      <div class="event">
-        <span>2015年</span>
-        <span>HASHTEAM成立</span>
-      </div>
-      <div class="event">
-        <span>2018年</span>
-        <span>获得第一次比赛胜利</span>
-      </div>
-      <div class="event">
-        <span>2020年</span>
-        <span>赢得全国CTF比赛冠军</span>
-      </div>
-      <div class="event">
-        <span>2022年</span>
-        <span>战队成员突破50人</span>
+      <div class="timeline">
+        <div class="event">
+          <span>2015年</span>
+          <span>HASHTEAM成立</span>
+        </div>
+        <div class="event">
+          <span>2018年</span>
+          <span>获得第一次比赛胜利</span>
+        </div>
+        <div class="event">
+          <span>2020年</span>
+          <span>赢得全国CTF比赛冠军</span>
+        </div>
+        <div class="event">
+          <span>2022年</span>
+          <span>战队成员突破50人</span>
+        </div>
       </div>
     </div>
-  </div>
+</div>
 
+<div class="container">
   <div class="join-us">
     <h2>加入我们</h2>
     <p>如果你是山东大学的学生，欢迎加入我们！</p>
     <a href="https://qm.qq.com/q/bQGNquDpba" class="join-button">联系我们</a>
   </div>
+  
 </div>
