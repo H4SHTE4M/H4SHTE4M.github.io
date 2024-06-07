@@ -87,7 +87,7 @@ key: page-about
         </a>
         <div class="info">
             <div class="name">lwzheng</div>
-            <div class="description">Maintainer</div>
+            <div class="description">DevOps</div>
         </div>
     </div>
     <div class="member">
