@@ -95,7 +95,7 @@ Hacked by ***1r0ny***
     <div class="member">
         <a href="https://www.cnblogs.com/9man" target="_blank">
             <div class="avatar">
-                <img src="https://s2.loli.net/2024/06/06/oyWFV32bHELhAdc.jpg" alt="Avatar">
+                <img src="https://img2024.cnblogs.com/blog/3243444/202406/3243444-20240607200431017-1412856777.jpg" alt="Avatar">
             </div>
         </a>
         <div class="info">
@@ -106,7 +106,7 @@ Hacked by ***1r0ny***
     <div class="member">
         <a href="https://almostgph.github.io/" target="_blank">
             <div class="avatar">
-                <img src="https://img2024.cnblogs.com/blog/3243444/202406/3243444-20240607200431017-1412856777.jpg" alt="Avatar">
+                <img src="https://s2.loli.net/2024/06/06/oyWFV32bHELhAdc.jpg" alt="Avatar">
             </div>
         </a>
         <div class="info">
