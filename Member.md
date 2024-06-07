@@ -53,7 +53,7 @@ Hacked by ***1r0ny***
         </a>
         <div class="info">
             <div class="name">hash_hash</div>
-            <div class="description">Crypto</div>
+            <div class="description">Crypto/Pwn</div>
         </div>
     </div>
     <div class="member">
@@ -272,7 +272,7 @@ Hacked by ***1r0ny***
       <a href="https://zhuzimiko.com/" target="_blank"><img src="https://s2.loli.net/2024/06/07/ASQ5RVaLcdZkTKy.jpg" alt="Avatar 6"></a>
       <a href="https://silence-forest-sf.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/HaRXKLcMOr8WYGt.jpg" alt="Avatar 7"></a>
       <a href="https://r3t2b3d.github.io" target="_blank"><img src="https://picture-1311455354.cos.ap-shanghai.myqcloud.com/img/b_7e7ccb7a6d5c480da999811826299e2f.jpg" alt="Avatar 8"></a>
-      <a href="https://www.cnblogs.com/9man" target="_blank"><img src="https://img2024.cnblogs.com/blog/3243444/202406/3243444-20240607200431017-1412856777.jpg" alt="Avatar 9"></a>
+      <a href="https://www.cnblogs.com/9man" target="_blank"><img src="https://s2.loli.net/2024/06/07/qTfVGMmJ8CZRXg5.jpg" alt="Avatar 9"></a>
       <a href="https://almostgph.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 10"></a>
       <a href="https://almostgph.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 1"></a>
       <a href="https://almostgph.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 2"></a>
