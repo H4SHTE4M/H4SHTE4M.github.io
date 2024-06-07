@@ -151,7 +151,7 @@ ul {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #007bff;
-  color: #fff;
+  color: white;
   text-decoration: none;
   border-radius: 5px;
 }
@@ -232,6 +232,6 @@ ul {
   <div class="join-us">
     <h2>加入我们</h2>
     <p>如果你是山东大学的学生，欢迎加入我们！</p>
-    <a href="mailto:contact@hasteam.com" class="join-button">联系我们</a>
+    <a href="https://qm.qq.com/q/bQGNquDpba" class="join-button">联系我们</a>
   </div>
 </div>
