@@ -302,8 +302,6 @@ Hacked by ***1r0ny***
   </div>
 </div>
 
-<img src="https://s2.loli.net/2024/06/07/JM32RdKmPEgA6xo.png" alt="want">
-
 <style>
   .scroll-container {
     width: 100%;
