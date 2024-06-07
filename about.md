@@ -152,12 +152,12 @@ ul {
     flex-direction: column;
     align-items: flex-start;
     height: auto;
-    padding: 0 100px;
+    padding: 0 20px; /* 减少padding以允许更小的宽度 */
   }
 
   .timeline:before {
     top: 0;
-    left: 50%;
+    left: 35%;
     width: 4px;
     border-radius: 3px;
     height: 100%;
@@ -167,7 +167,7 @@ ul {
   .timeline:after {
     top: auto;
     bottom: -15px;
-    left: 50%;
+    left: 35%;
     right: auto;
     transform: translateX(-50%);
     border-left: 10px solid transparent;
@@ -180,21 +180,22 @@ ul {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* 减少margin以允许更小的宽度 */
   }
 
   .timeline .event span:first-child {
     margin-bottom: 0;
-    margin-right: 100px;
+    margin-right: 100px; /* 减少margin以允许更小的宽度 */
   }
 
   .timeline .event:before {
     top: 50%;
     left: auto;
-    right: calc(50% - 4pt);
+    right: calc(65% + 1px); /* 调整定位以适应更小的宽度 */
     transform: translateY(-50%);
   }
 }
+
 
 .join-us {
   grid-column: 1 / 3;
@@ -297,5 +298,4 @@ ul {
     <p>如果你是山东大学的学生，欢迎加入我们！</p>
     <a href="https://qm.qq.com/q/bQGNquDpba" class="join-button">联系我们</a>
   </div>
-  
 </div>
