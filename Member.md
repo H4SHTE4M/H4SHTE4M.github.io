@@ -82,9 +82,9 @@ Hacked by ***1r0ny***
   <h3>2022级队员：</h3>
   <div class="member-list">
     <div class="member">
-        <a href="https://almostgph.github.io/" target="_blank">
+        <a href="https://lwzheng.tech/" target="_blank">
             <div class="avatar">
-                <img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar">
+                <img src="https://s2.loli.net/2024/06/07/apGA7bF6SYgB8nx.jpg" alt="Avatar">
             </div>
         </a>
         <div class="info">
@@ -275,7 +275,7 @@ Hacked by ***1r0ny***
       <a href="https://www.cnblogs.com/9man" target="_blank"><img src="https://s2.loli.net/2024/06/07/qTfVGMmJ8CZRXg5.jpg" alt="Avatar 9"></a>
       <a href="https://almostgph.github.io/" target="_blank"><img src="https://s3.bmp.ovh/imgs/2024/06/07/a1952c20a4b739d7.jpg" alt="Avatar 10"></a>
       <a href="https://almostgph.github.io/" target="_blank"><img src="https://avatars.githubusercontent.com/u/162857404?s=400&u=ad0f3d8c1d4184a4c69a947df8edaf4e487306d2&v=4" alt="Avatar 1"></a>
-      <a href="https://almostgph.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 2"></a>
+      <a href="https://lwzheng.tech/" target="_blank"><img src="https://s2.loli.net/2024/06/07/apGA7bF6SYgB8nx.jpg" alt="Avatar 2"></a>
       <a href="https://almostgph.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 3"></a>
       <a href="https://almostgph.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 4"></a>
       <a href="https://almostgph.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 5"></a>
