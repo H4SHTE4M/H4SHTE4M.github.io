@@ -228,7 +228,7 @@ key: page-about
     <div class="member">
         <a href="" target="_blank">
             <div class="avatar">
-                <img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar">
+                <img src="https://avatars.githubusercontent.com/u/97386720?v=4" alt="Avatar">
             </div>
         </a>
         <div class="info">
@@ -275,7 +275,7 @@ key: page-about
       <a href="https://yy-mh.github.io" target="_blank"><img src="https://avatars.githubusercontent.com/u/162857404?s=400&u=ad0f3d8c1d4184a4c69a947df8edaf4e487306d2&v=4" alt="Avatar 1"></a>
       <a href="https://lwzheng.tech/" target="_blank"><img src="https://s2.loli.net/2024/06/07/apGA7bF6SYgB8nx.jpg" alt="Avatar 2"></a>
       <a href="https://blog.csdn.net/GKD2019" target="_blank"><img src="https://avatars.githubusercontent.com/u/108865421" alt="Avatar 3"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 4"></a>
+      <a href="" target="_blank"><img src="https://avatars.githubusercontent.com/u/97386720?v=4" alt="Avatar 4"></a>
       <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 5"></a>
       <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 6"></a>
       <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 7"></a>
