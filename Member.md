@@ -29,6 +29,28 @@ key: page-about
   <h3>2020级队员：</h3>
   <div class="member-list">
     <div class="member">
+        <a href="" target="_blank">
+            <div class="avatar">
+                <img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar">
+            </div>
+        </a>
+        <div class="info">
+            <div class="name">moon_flower</div>
+            <div class="description">Pwn/Web</div>
+        </div>
+    </div>
+    <div class="member">
+        <a href="" target="_blank">
+            <div class="avatar">
+                <img src="https://s2.loli.net/2024/06/10/icPTZxkoygpL7CH.jpg" alt="Avatar">
+            </div>
+        </a>
+        <div class="info">
+            <div class="name">Zuni-W</div>
+            <div class="description">Crypto/Reverse</div>
+        </div>
+    </div>
+    <div class="member">
         <a href="https://silence-forest-sf.github.io/" target="_blank">
             <div class="avatar">
                 <img src="https://s2.loli.net/2024/06/07/HaRXKLcMOr8WYGt.jpg" alt="Avatar">
@@ -102,6 +124,17 @@ key: page-about
         </div>
     </div>
     <div class="member">
+        <a href="https://heygap.github.io/" target="_blank">
+            <div class="avatar">
+                <img src="https://s2.loli.net/2024/06/10/8FZaw4kY619ouRB.jpg" alt="Avatar">
+            </div>
+        </a>
+        <div class="info">
+            <div class="name">HeyGap</div>
+            <div class="description">Reverse/Pwn</div>
+        </div>
+    </div>
+    <div class="member">
         <a href="https://almostgph.github.io/" target="_blank">
             <div class="avatar">
                 <img src="https://s2.loli.net/2024/06/06/oyWFV32bHELhAdc.jpg" alt="Avatar">
@@ -120,6 +153,17 @@ key: page-about
         </a>
         <div class="info">
             <div class="name">MoZhu</div>
+            <div class="description">Web</div>
+        </div>
+    </div>
+    <div class="member">
+        <a href="" target="_blank">
+            <div class="avatar">
+                <img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar">
+            </div>
+        </a>
+        <div class="info">
+            <div class="name">TheBeastofwar</div>
             <div class="description">Web</div>
         </div>
     </div>
@@ -276,7 +320,7 @@ key: page-about
       <a href="https://lwzheng.tech/" target="_blank"><img src="https://s2.loli.net/2024/06/07/apGA7bF6SYgB8nx.jpg" alt="Avatar 2"></a>
       <a href="https://blog.csdn.net/GKD2019" target="_blank"><img src="https://avatars.githubusercontent.com/u/108865421" alt="Avatar 3"></a>
       <a href="" target="_blank"><img src="https://avatars.githubusercontent.com/u/97386720?v=4" alt="Avatar 4"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 5"></a>
+      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/10/8FZaw4kY619ouRB.jpg" alt="Avatar 5"></a>
       <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 6"></a>
       <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 7"></a>
       <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 8"></a>
