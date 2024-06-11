@@ -29,9 +29,9 @@ key: page-about
   <h3>2020级队员：</h3>
   <div class="member-list">
     <div class="member">
-        <a href="" target="_blank">
+        <a href="http://121.89.196.11/" target="_blank">
             <div class="avatar">
-                <img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar">
+                <img src="https://icfh-imgs-1313391192.cos.ap-nanjing.myqcloud.com/images/202406111723952.png" alt="Avatar">
             </div>
         </a>
         <div class="info">
@@ -61,7 +61,17 @@ key: page-about
             <div class="description">Misc</div>
         </div>
     </div>
-    
+    <div class="member">
+        <a href="https://glacierrrr.online/" target="_blank">
+            <div class="avatar">
+                <img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar">
+            </div>
+        </a>
+        <div class="info">
+            <div class="name">Glacier</div>
+            <div class="description">Web</div>
+        </div>
+    </div>
   </div>
   <h3>2021级队员：</h3>
   <div class="member-list">
@@ -163,7 +173,7 @@ key: page-about
             </div>
         </a>
         <div class="info">
-            <div class="name">TheBeastofwar</div>
+            <div class="name">TheBeast<br />&nbsp;&nbsp;&nbsp;ofwar</div>
             <div class="description">Web</div>
         </div>
     </div>
@@ -327,11 +337,11 @@ key: page-about
       <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 9"></a>
       <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 10"></a>
     </div>
-  </div>
+  </div>    
   <div class="scroll-container">
     <div class="scroll-content alternate">
       <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 11"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 12"></a>
+      <a href="" target="_blank"><img src="https://icfh-imgs-1313391192.cos.ap-nanjing.myqcloud.com/images/202406111723952.png" alt="Avatar 12"></a>
       <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 13"></a>
       <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 14"></a>
       <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 15"></a>
