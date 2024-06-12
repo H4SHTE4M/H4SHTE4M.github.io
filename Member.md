@@ -169,11 +169,11 @@ key: page-about
     <div class="member">
         <a href="" target="_blank">
             <div class="avatar">
-                <img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar">
+                <img src="https://s2.loli.net/2024/06/12/ywSQBmUMEVCK6iA.jpg" alt="Avatar">
             </div>
         </a>
         <div class="info">
-            <div class="name">TheBeast<br />&nbsp;&nbsp;&nbsp;ofwar</div>
+            <div class="name">zdh</div>
             <div class="description">Web</div>
         </div>
     </div>
@@ -342,7 +342,7 @@ key: page-about
     <div class="scroll-content alternate">
       <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 11"></a>
       <a href="" target="_blank"><img src="https://icfh-imgs-1313391192.cos.ap-nanjing.myqcloud.com/images/202406111723952.png" alt="Avatar 12"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 13"></a>
+      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/12/ywSQBmUMEVCK6iA.jpg" alt="Avatar 13"></a>
       <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 14"></a>
       <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 15"></a>
       <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 16"></a>
@@ -466,7 +466,6 @@ key: page-about
 
   .member img:hover {
     transform: scale(1.1);
-    filter: grayscale(50%);
   }
 
   .member .info {
