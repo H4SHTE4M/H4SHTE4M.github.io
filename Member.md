@@ -87,7 +87,7 @@ key: page-about
         </div>
     </div>
     <div class="member">
-        <a href="https://ch31sbest.github.io/" target="_blank">
+        <a href="https://1cfh.github.io/" target="_blank">
             <div class="avatar">
                 <img src="https://ch31sbest.github.io/images/tou.jpg" alt="Avatar">
             </div>
@@ -317,7 +317,7 @@ key: page-about
   <div class="scroll-container">
     <div class="scroll-content">
       <a href="https://almostgph.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/06/oyWFV32bHELhAdc.jpg" alt="Avatar 1"></a>
-      <a href="https://ch31sbest.github.io/" target="_blank"><img src="https://ch31sbest.github.io/images/tou.jpg" alt="Avatar 2"></a>
+      <a href="https://1cfh.github.io/" target="_blank"><img src="https://ch31sbest.github.io/images/tou.jpg" alt="Avatar 2"></a>
       <a href="https://lmarch2.top/" target="_blank"><img src="https://github.com/lmarch2/images/blob/main/b_e05bb213ec75a4a3448d288364b7307c.jpg?raw=true" alt="Avatar 3"></a>
       <a href="https://www.cnblogs.com/Smera1d0" target="_blank"><img src="https://s2.loli.net/2024/06/07/pkE1gNSx4jHYeqD.jpg" alt="Avatar 4"></a>
       <a href="https://dawnrisingdong.github.io/" target="_blank"><img src="https://raw.githubusercontent.com/dawnrisingDong/pic_bed/main/img/202406071747324.jpg" alt="Avatar 5"></a>
