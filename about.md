@@ -74,6 +74,11 @@ key: page-about
   border-radius: 10px;
 }
 
+.skills svg {
+  text-align: center;
+}
+
+
 h1, h2 {
   color: #333;
 }
@@ -86,12 +91,6 @@ p, ul {
 ul {
   list-style-type: disc;
   margin-left: 20px;
-}
-
-.skills-chart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .timeline {
