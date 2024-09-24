@@ -320,6 +320,6 @@ ul {
   <div class="join-us">
     <h2>加入我们</h2>
     <p>只要你是山东大学的学生，任何年级，任何专业，都欢迎加入我们！</p>
-    <a href="https://qm.qq.com/q/bQGNquDpba" class="join-button">联系我们</a>
+    <a href="https://qm.qq.com/q/W4Lhi8dPaI" class="join-button">联系我们</a>
   </div>
 </div>
