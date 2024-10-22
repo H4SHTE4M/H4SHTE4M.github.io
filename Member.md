@@ -76,7 +76,7 @@ key: page-about
   <h3>2021级队员：</h3>
   <div class="member-list">
     <div class="member">
-        <a href="https://r3t2b3d.github.io" target="_blank">
+        <a href="https://h45h.fun" target="_blank">
             <div class="avatar">
                 <img src="https://picture-1311455354.cos.ap-shanghai.myqcloud.com/img/b_7e7ccb7a6d5c480da999811826299e2f.jpg" alt="Avatar">
             </div>
@@ -87,7 +87,7 @@ key: page-about
         </div>
     </div>
     <div class="member">
-        <a href="https://1cfh.github.io/" target="_blank">
+        <a href="https://1cfh.fun" target="_blank">
             <div class="avatar">
                 <img src="https://1cfh.github.io/images/tou.jpg" alt="Avatar">
             </div>
