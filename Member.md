@@ -162,7 +162,7 @@ key: page-about
             </div>
         </a>
         <div class="info">
-            <div class="name">ESFJ-MoZhu</div>
+            <div class="name">ESFJ_MoZhu</div>
             <div class="description">Web</div>
         </div>
     </div>
