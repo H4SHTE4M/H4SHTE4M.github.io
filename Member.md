@@ -156,7 +156,7 @@ key: page-about
         </div>
     </div>
     <div class="member">
-        <a href="https://zhuzimiko.com/" target="_blank">
+        <a href="https://mozhubamboo.com" target="_blank">
             <div class="avatar">
                 <img src="https://s21.ax1x.com/2025/06/02/pV9LvXq.jpg" alt="Avatar">
             </div>
