@@ -321,7 +321,7 @@ key: page-about
       <a href="https://lmarch2.top/" target="_blank"><img src="https://github.com/lmarch2/images/blob/main/b_e05bb213ec75a4a3448d288364b7307c.jpg?raw=true" alt="Avatar 3"></a>
       <a href="https://www.cnblogs.com/Smera1d0" target="_blank"><img src="https://s2.loli.net/2024/06/07/pkE1gNSx4jHYeqD.jpg" alt="Avatar 4"></a>
       <a href="https://dawnrisingdong.github.io/" target="_blank"><img src="https://raw.githubusercontent.com/dawnrisingDong/pic_bed/main/img/202406071747324.jpg" alt="Avatar 5"></a>
-      <a href="https://zhuzimiko.com/" target="_blank"><img src="https://s21.ax1x.com/2025/06/02/pV9LvXq.jpg" alt="Avatar 6"></a>
+      <a href="https://mozhubamboo.com" target="_blank"><img src="https://s21.ax1x.com/2025/06/02/pV9LvXq.jpg" alt="Avatar 6"></a>
       <a href="https://silence-forest-sf.github.io/" target="_blank"><img src="https://s2.loli.net/2024/06/07/HaRXKLcMOr8WYGt.jpg" alt="Avatar 7"></a>
       <a href="https://r3t2b3d.github.io" target="_blank"><img src="https://picture-1311455354.cos.ap-shanghai.myqcloud.com/img/b_7e7ccb7a6d5c480da999811826299e2f.jpg" alt="Avatar 8"></a>
       <a href="https://www.cnblogs.com/9man" target="_blank"><img src="https://s2.loli.net/2024/06/07/qTfVGMmJ8CZRXg5.jpg" alt="Avatar 9"></a>
