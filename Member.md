@@ -425,6 +425,17 @@ key: page-about
             <div class="description">Pwn</div>
         </div>
     </div>
+    <div class="member">
+        <a href="" target="_blank">
+            <div class="avatar">
+                <img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar">
+            </div>
+        </a>
+        <div class="info">
+            <div class="name">游侠</div>
+            <div class="description">Crypto</div>
+        </div>
+    </div>  
   </div> 
     <h2>与SDUCTFer一起无限进步</h2>
   <div class="scroll-container">
@@ -444,30 +455,17 @@ key: page-about
       <a href="https://blog.csdn.net/GKD2019" target="_blank"><img src="https://avatars.githubusercontent.com/u/108865421" alt="Avatar 3"></a>
       <a href="https://m1ng2u.github.io/" target="_blank"><img src="https://m1ng2u.github.io/m1ng2u.jpg" alt="Avatar 4"></a>
       <a href="https://sangnigege.github.io/" target="_blank"><img src="https://avatars.githubusercontent.com/u/153370958?v=4" alt="Avatar 5"></a>
-      <a href="https://sep252.github.io/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/sep252/pic@main/avatar.jpg" alt="Avatar 6"></a>
-      <a href="https://infinitepwn.github.io/" target="_blank"><img src="https://infinitepwn.github.io/img/head.png" alt="Avatar 7"></a>
-      <a href="https://sheep-sys-sudo.github.io/" target="_blank"><img src="https://sheep-sys-sudo.github.io/images/222.jpg" alt="Avatar 8"></a>
-      <a href="https://lingqing777.github.io/" target="_blank"><img src="https://avatars.githubusercontent.com/u/193331225?s=400&u=c80e0eaa78be3ea905474dfe0d07142776023fde&v=4" alt="Avatar 9"></a>
-      <a href="https://xianxinyyds.github.io/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/xianxinyyds/tuchuang@main/img/xianxin.jpg" alt="Avatar 10"></a>
     </div>
   </div>    
   <div class="scroll-container">
     <div class="scroll-content alternate">
       <a href="https://gggtaotao.github.io/" target="_blank"><img src="https://q.qlogo.cn/g?b=qq&nk=739748809&s=640" alt="Avatar 11"></a>
       <a href="" target="_blank"><img src="https://icfh-imgs-1313391192.cos.ap-nanjing.myqcloud.com/images/202406111723952.png" alt="Avatar 12"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/12/ywSQBmUMEVCK6iA.jpg" alt="Avatar 13"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 14"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 15"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 16"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 17"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 18"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 19"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 20"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 11"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 12"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 13"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 14"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 15"></a>
+      <a href="https://sep252.github.io/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/sep252/pic@main/avatar.jpg" alt="Avatar 6"></a>
+      <a href="https://infinitepwn.github.io/" target="_blank"><img src="https://infinitepwn.github.io/img/head.png" alt="Avatar 7"></a>
+      <a href="https://sheep-sys-sudo.github.io/" target="_blank"><img src="https://sheep-sys-sudo.github.io/images/222.jpg" alt="Avatar 8"></a>
+      <a href="https://lingqing777.github.io/" target="_blank"><img src="https://avatars.githubusercontent.com/u/193331225?s=400&u=c80e0eaa78be3ea905474dfe0d07142776023fde&v=4" alt="Avatar 9"></a>
+      <a href="https://xianxinyyds.github.io/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/xianxinyyds/tuchuang@main/img/xianxin.jpg" alt="Avatar 10"></a>
       <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 16"></a>
       <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 17"></a>
       <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 18"></a>
