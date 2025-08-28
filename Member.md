@@ -312,7 +312,120 @@ key: page-about
             <div class="description">Pwn/Misc</div>
         </div>
     </div>
+    <div class="member">
+        <a href="https://m1ng2u.github.io" target="_blank">
+            <div class="avatar">
+                <img src="https://m1ng2u.github.io/m1ng2u.jpg" alt="Avatar">
+            </div>
+        </a>
+        <div class="info">
+            <div class="name">M1ng2u</div>
+            <div class="description">Web</div>
+        </div>
+    </div>
+    <div class="member">
+        <a href="https://sangnigege.github.io/" target="_blank">
+            <div class="avatar">
+                <img src="https://avatars.githubusercontent.com/u/153370958?v=4" alt="Avatar">
+            </div>
+        </a>
+        <div class="info">
+            <div class="name">Tony5</div>
+            <div class="description">Web/Pentest</div>
+        </div>
+    </div>
   </div>
+  <h3>2024级队员：</h3>
+  <div class="member-list">
+    <div class="member">
+        <a href="https://sep252.github.io" target="_blank">
+            <div class="avatar">
+                <img src="https://cdn.jsdelivr.net/gh/sep252/pic@main/avatar.jpg" alt="Avatar">
+            </div>
+        </a>
+        <div class="info">
+            <div class="name">sep</div>
+            <div class="description">Forensics/misc</div>
+        </div>
+    </div>
+    <div class="member">
+        <a href="https://infinitepwn.github.io" target="_blank">
+            <div class="avatar">
+                <img src="https://infinitepwn.github.io/img/head.png" alt="Avatar">
+            </div>
+        </a>
+        <div class="info">
+            <div class="name">infnite</div>
+            <div class="description">Crypto</div>
+        </div>
+    </div>
+    <div class="member">
+        <a href="https://sheep-sys-sudo.github.io/" target="_blank">
+            <div class="avatar">
+                <img src="https://sheep-sys-sudo.github.io/images/222.jpg" alt="Avatar">
+            </div>
+        </a>
+        <div class="info">
+            <div class="name">Sh_eePppp</div>
+            <div class="description">Web</div>
+        </div>
+    </div>
+    <div class="member">
+        <a href="" target="_blank">
+            <div class="avatar">
+                <img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar">
+            </div>
+        </a>
+        <div class="info">
+            <div class="name">twilight</div>
+            <div class="description">Pwn</div>
+        </div>
+    </div>
+    <div class="member">
+        <a href="https://lingqing777.github.io/" target="_blank">
+            <div class="avatar">
+                <img src="https://avatars.githubusercontent.com/u/193331225?s=400&u=c80e0eaa78be3ea905474dfe0d07142776023fde&v=4" alt="Avatar">
+            </div>  
+        </a>
+        <div class="info">
+            <div class="name">q1n9</div>
+            <div class="description">Web</div>
+        </div>
+    </div>
+    <div class="member">
+        <a href="https://xianxinyyds.github.io/" target="_blank">
+            <div class="avatar">
+                <img src="https://cdn.jsdelivr.net/gh/xianxinyyds/tuchuang@main/img/xianxin.jpg" alt="Avatar">
+            </div>
+        </a>
+        <div class="info">
+            <div class="name">xianxin</div>
+            <div class="description">Web</div>
+        </div>
+    </div>
+    <div class="member">
+        <a href="" target="_blank">
+            <div class="avatar">
+                <img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar">
+            </div>
+        </a>
+        <div class="info">
+            <div class="name">zypho</div>
+            <div class="description">Pwn</div>
+        </div>
+    </div>
+    <div class="member">
+        <a href="https://gggtaotao.github.io/" target="_blank">
+            <div class="avatar">
+                <img src="https://q.qlogo.cn/g?b=qq&nk=739748809&s=640" alt="Avatar">
+            </div>
+        </a>
+        <div class="info">
+            <div class="name">Tao</div>
+            <div class="description">Pwn</div>
+        </div>
+    </div>
+  </div> 
     <h2>与SDUCTFer一起无限进步</h2>
   <div class="scroll-container">
     <div class="scroll-content">
@@ -329,18 +442,18 @@ key: page-about
       <a href="https://yy-mh.github.io" target="_blank"><img src="https://avatars.githubusercontent.com/u/162857404?s=400&u=ad0f3d8c1d4184a4c69a947df8edaf4e487306d2&v=4" alt="Avatar 1"></a>
       <a href="https://lwzheng.tech/" target="_blank"><img src="https://s2.loli.net/2024/06/07/apGA7bF6SYgB8nx.jpg" alt="Avatar 2"></a>
       <a href="https://blog.csdn.net/GKD2019" target="_blank"><img src="https://avatars.githubusercontent.com/u/108865421" alt="Avatar 3"></a>
-      <a href="" target="_blank"><img src="https://avatars.githubusercontent.com/u/97386720?v=4" alt="Avatar 4"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/10/8FZaw4kY619ouRB.jpg" alt="Avatar 5"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 6"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 7"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 8"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 9"></a>
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 10"></a>
+      <a href="https://m1ng2u.github.io/" target="_blank"><img src="https://m1ng2u.github.io/m1ng2u.jpg" alt="Avatar 4"></a>
+      <a href="https://sangnigege.github.io/" target="_blank"><img src="https://avatars.githubusercontent.com/u/153370958?v=4" alt="Avatar 5"></a>
+      <a href="https://sep252.github.io/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/sep252/pic@main/avatar.jpg" alt="Avatar 6"></a>
+      <a href="https://infinitepwn.github.io/" target="_blank"><img src="https://infinitepwn.github.io/img/head.png" alt="Avatar 7"></a>
+      <a href="https://sheep-sys-sudo.github.io/" target="_blank"><img src="https://sheep-sys-sudo.github.io/images/222.jpg" alt="Avatar 8"></a>
+      <a href="https://lingqing777.github.io/" target="_blank"><img src="https://avatars.githubusercontent.com/u/193331225?s=400&u=c80e0eaa78be3ea905474dfe0d07142776023fde&v=4" alt="Avatar 9"></a>
+      <a href="https://xianxinyyds.github.io/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/xianxinyyds/tuchuang@main/img/xianxin.jpg" alt="Avatar 10"></a>
     </div>
   </div>    
   <div class="scroll-container">
     <div class="scroll-content alternate">
-      <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 11"></a>
+      <a href="https://gggtaotao.github.io/" target="_blank"><img src="https://q.qlogo.cn/g?b=qq&nk=739748809&s=640" alt="Avatar 11"></a>
       <a href="" target="_blank"><img src="https://icfh-imgs-1313391192.cos.ap-nanjing.myqcloud.com/images/202406111723952.png" alt="Avatar 12"></a>
       <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/12/ywSQBmUMEVCK6iA.jpg" alt="Avatar 13"></a>
       <a href="" target="_blank"><img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="Avatar 14"></a>
@@ -363,6 +476,7 @@ key: page-about
     </div>
   </div>
 </div>
+
 
 
 <style>
