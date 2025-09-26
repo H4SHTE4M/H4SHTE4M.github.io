@@ -40,7 +40,7 @@ key: page-about
         }
 
         .container2 {
-          grid-template-columns: 1fr 2fr;
+          grid-template-columns: 1fr 1.5fr;
         }
 
         .container3 {
