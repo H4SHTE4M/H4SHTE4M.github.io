@@ -212,7 +212,7 @@ key: page-about
   </div>
 </div>
 
-<div class="container3">
+<div class="container2">
   <div class="history">
     <h2>发展历程</h2>
       <div class="timeline">
