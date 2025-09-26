@@ -27,206 +27,157 @@ key: page-about
 ---
 
 <style>
-.container, .container2, .container3 {
-  display: grid;
-  grid-template-rows: auto;
-  gap: 20px;
-  padding: 10px;
-  font-family: Arial, sans-serif;
-}
+        .container, .container2, .container3 {
+          display: grid;
+          grid-template-rows: auto;
+          gap: 20px;
+          padding: 10px;
+          font-family: Arial, sans-serif;
+        }
 
-.container {
-  grid-template-columns: 2fr 1fr;
-}
+        .container {
+          grid-template-columns: 2fr 1fr;
+        }
 
-.container2 {
-  grid-template-columns: 1fr 2fr;
-}
+        .container2 {
+          grid-template-columns: 1fr 2fr;
+        }
 
-.container3 {
-  grid-template-columns: 1fr 1fr;
-}
+        .container3 {
+          grid-template-columns: 1fr 1fr;
+        }
 
+        @media (max-width: 1000px) {
+          .container, .container2, .container3 {
+            grid-template-columns: 1fr;
+          }
+        }
 
+        .logo {
+          grid-column: 1 / 3;
+          text-align: center;
+        }
 
-@media (max-width: 1000px) {
-  .container, .container2, .container3 {
-    grid-template-columns: 1fr;
-  }
-}
+        .logo img {
+          border-radius: 50%;
+          background-color: #f0f0f0;
+          padding: 10px;
+        }
 
+        .about, .achievements, .skills, .history, .join-us {
+          background-color: #f4f4f4;
+          padding: 20px;
+          border-radius: 10px;
+        }
 
-.logo {
-  grid-column: 1 / 3;
-  text-align: center;
-}
+        .skills svg {
+          text-align: center;
+        }
 
+        h1, h2 {
+          color: #333;
+        }
 
-.logo img {
-  border-radius: 50%;
-  background-color: #f0f0f0;
-  padding: 10px;
-}
+        p, ul {
+          color: #666;
+          line-height: 1.6;
+        }
 
-.about, .achievements, .skills, .history, .join-us {
-  background-color: #f4f4f4;
-  padding: 20px;
-  border-radius: 10px;
-}
+        ul {
+          list-style-type: disc;
+          margin-left: 20px;
+        }
 
-.skills svg {
-  text-align: center;
-}
+        /* 修改后的时间线样式 - 桌面端垂直排列 */
+        .timeline {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          padding: 20px 0;
+          margin-left: 20px;
+        }
 
+        .timeline:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 4px;
+          height: 100%;
+          background-color: #ccc;
+          border-radius: 3px;
+        }
 
-h1, h2 {
-  color: #333;
-}
+        .timeline .event {
+          position: relative;
+          margin-bottom: 40px;
+          padding-left: 30px;
+        }
 
-p, ul {
-  color: #666;
-  line-height: 1.6;
-}
+        .timeline .event:last-child {
+          margin-bottom: 0;
+        }
 
-ul {
-  list-style-type: disc;
-  margin-left: 20px;
-}
+        .timeline .event:before {
+          content: '';
+          position: absolute;
+          top: 5px;
+          left: -8px;
+          width: 20px;
+          height: 20px;
+          background-color: #666;
+          border-radius: 50%;
+          border: 4px solid #f4f4f4;
+          z-index: 1;
+        }
 
-.timeline {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  padding: 20px 0;
-  height: 150px;
-}
+        .timeline .event span {
+          display: block;
+        }
 
-.timeline .event {
-  text-align: center;
-  position: relative;
-  width: 20%;
-}
+        .timeline .event span:first-child {
+          font-weight: bold;
+          margin-bottom: 5px;
+          color: #333;
+        }
 
-.timeline .event span {
-  display: block;
-}
+        /* 移动端样式 */
+        @media (max-width: 600px) {
+          .timeline {
+            margin-left: 10px;
+          }
+          
+          .timeline .event {
+            padding-left: 25px;
+          }
+          
+          .timeline .event:before {
+            left: -6px;
+            width: 16px;
+            height: 16px;
+          }
+        }
 
-.timeline .event span:first-child {
-  margin-bottom: 50px; /* 增加时间与事件之间的间距 */
-}
+        .join-us {
+          grid-column: 1 / 3;
+          text-align: center;
+        }
 
-.timeline:before {
-  content: '';
-  position: absolute;
-  top: 50% - 1px;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  border-radius: 3px;
-  background-color: #ccc;
-}
+        .join-button {
+          display: inline-block;
+          margin-top: 20px;
+          padding: 10px 20px;
+          background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+          color: #ffffff;
+          text-decoration: none;
+          border-radius: 5px;
+        }
 
-.timeline:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: -5px;
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid #ccc;
-}
-
-.timeline .event:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 10px;
-  height: 10px;
-  background-color: #666;
-  border-radius: 50%;
-}
-
-@media (max-width: 600px) {
-  .timeline {
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
-    padding: 0 20px; /* 减少padding以允许更小的宽度 */
-  }
-
-  .timeline:before {
-    top: 0;
-    left: 35%;
-    width: 4px;
-    border-radius: 3px;
-    height: 100%;
-    transform: translateX(-50%);
-  }
-
-  .timeline:after {
-    top: auto;
-    bottom: -15px;
-    left: 35%;
-    right: auto;
-    transform: translateX(-50%);
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid #ccc;
-  }
-
-  .timeline .event {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 40px; /* 减少margin以允许更小的宽度 */
-  }
-
-  .timeline .event span:first-child {
-    margin-bottom: 0;
-    margin-right: 100px; /* 减少margin以允许更小的宽度 */
-  }
-
-  .timeline .event:before {
-    top: 50%;
-    left: auto;
-    right: calc(65% + 1px); /* 调整定位以适应更小的宽度 */
-    transform: translateY(-50%);
-  }
-}
-
-
-.join-us {
-  grid-column: 1 / 3;
-  text-align: center;
-}
-
-.join-button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-
-.join-button:hover {
-  background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
-  text-decoration:none;
-}
-
-
-
-
-</style>
+        .join-button:hover {
+          background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+          text-decoration:none;
+        }
+    </style>
 
 <div class="logo">
     <img src="https://s2.loli.net/2024/06/07/7vdFaYn3gSL2Csf.png" alt="HASHTEAM Logo" width="100" height="100">
