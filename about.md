@@ -289,11 +289,29 @@ ul {
         </div>
         <div class="event">
           <span>2024年</span>
-          <span>第一次独立组织校赛</span>
+          <span>获第二届“熵密杯” 全国一等奖</span>
         </div>
         <div class="event">
           <span>2024年</span>
+          <span>第一次独立组织校赛</span>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="event">
+          <span>2024年</span>
           <span>战队成员突破20人</span>
+        </div>
+        <div class="event">
+          <span>2025年</span>
+          <span>获第十八届全国大学生信息安全竞赛（作品赛）一等奖</span>
+        </div>
+        <div class="event">
+          <span>2025年</span>
+          <span>获国赛+长城杯半决赛一等奖</span>
+        </div>
+        <div class="event">
+          <span>2025年</span>
+          <span>CTFtime 全球排名稳定在前 200，稳居中国大陆高校战队前 10</span>
         </div>
       </div>
     </div>
