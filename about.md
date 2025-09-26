@@ -40,7 +40,7 @@ key: page-about
         }
 
         .container2 {
-          grid-template-columns: 1fr 1.5fr;
+          grid-template-columns: 1fr 2fr;
         }
 
         .container3 {
@@ -212,7 +212,7 @@ key: page-about
   </div>
 </div>
 
-<div class="container2">
+<div class="container3">
   <div class="achievements">
     <h2>成就</h2>
     <ul>
