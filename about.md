@@ -285,7 +285,7 @@ ul {
         </div>
         <div class="event">
           <span>2022年</span>
-          <span>获赢得国赛二等奖</span>
+          <span>获国赛二等奖</span>
         </div>
         <div class="event">
           <span>2024年</span>
