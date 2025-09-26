@@ -240,25 +240,11 @@ key: page-about
         </div>
         <div class="event">
           <span>2024年</span>
-          <span>获“熵密杯” 全国一等奖</span>
-        </div>
-        <div class="event">
-          <span>2024年</span>
           <span>第一次独立组织校赛</span>
         </div>
-      </div>
-      <div class="timeline">
         <div class="event">
           <span>2024年</span>
           <span>战队成员突破20人</span>
-        </div>
-        <div class="event">
-          <span>2025年</span>
-          <span>获国赛半决一等奖</span>
-        </div>
-        <div class="event">
-          <span>2025年</span>
-          <span>获信安作品赛国一</span>
         </div>
         <div class="event">
           <span>2025年</span>
