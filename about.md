@@ -64,10 +64,17 @@ key: page-about
           padding: 10px;
         }
 
-        .about, .achievements, .skills, .history, .join-us {
+        .about, .skills, .history, .join-us {
           background-color: #f4f4f4;
           padding: 20px;
           border-radius: 10px;
+        }
+
+        .achievements{
+          background-color: #f4f4f4;
+          padding: 20px;
+          border-radius: 10px;
+          font-size: 20px;
         }
 
         .skills svg {
