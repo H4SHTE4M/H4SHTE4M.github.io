@@ -262,7 +262,7 @@ key: page-about
   <div class="about">
     <h2>什么是CTF？</h2>
     <p>CTF(Capture The Flag)是网络安全技术人员之间进行技术竞技的一种比赛形式，主要包括解题模式 (Jeopardy)和攻防模式(Attack & Defense)，</p>
-    <p>传统 CTF 竞赛涵盖了⌈Web 网络攻防、Re 逆向工程、Pwn 二进制漏洞利用、Crypto 密码攻击、Mobile 移动安全以及、Misc安全杂项⌋等多种类别，新兴的安全问题如区块链安全、Ai对抗、自动写驶安全、数据安全、邮件安全等也开始逐渐成为进入CTF 赛事的范畴。</p>
+    <p>传统 CTF 竞赛涵盖了⌈Web 网络攻防、Re 逆向工程、Pwn 二进制漏洞利用、Crypto 密码攻击、Mobile 移动安全以及、Misc安全杂项⌋等多种类别，新兴的安全问题如区块链安全、Ai对抗、自动驾驶安全、数据安全、邮件安全等也开始逐渐成为进入CTF 赛事的范畴。</p>
   </div>
 
   <div class="about">
